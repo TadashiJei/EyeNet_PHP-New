@@ -1,43 +1,48 @@
-<!-- Right side column. Contains the navbar and content of the page -->
-<aside class="right-side">
-    <!-- Content Header (Page header) -->
+<!-- Main content area -->
+<div class="right-side">
+    <!-- Modern Header Section -->
     <section class="content-header">
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-                <h1><?php _e('Dashboard'); ?></h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="?route=dashboard"><i class="fa fa-dashboard"></i> <?php _e('Home'); ?></a></li>
-                    <li class="breadcrumb-item active"><?php _e('Dashboard'); ?></li>
-                </ol>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="mb-2"><?php _e('Dashboard'); ?></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="?route=dashboard" class="text-decoration-none"><i class="fa fa-dashboard me-2"></i><?php _e('Home'); ?></a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><?php _e('Dashboard'); ?></li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Main content -->
     <section class="content">
-        <?php if(!empty($statusmessage)): ?>
-            <div class="row">
-                <div class='col-md-12'>
+        <?php if(!empty($statusmessage) || file_exists("install") == 1): ?>
+            <div class="overview-section">
+                <?php if(!empty($statusmessage)): ?>
                     <div class="alert alert-<?php print $statusmessage["type"]; ?> alert-dismissible" role="alert">
                         <i class="fa fa-<?php echo ($statusmessage["type"] == 'danger' ? 'exclamation-triangle' : 'info-circle'); ?>"></i>
                         <span><?php print __($statusmessage["message"]); ?></span>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-        <?php endif; ?>
+                <?php endif; ?>
 
-        <?php if(file_exists("install") == 1): ?>
-            <div class="alert alert-danger">
-                <i class="fa fa-exclamation-triangle"></i>
-                <span><?php _e('Please delete the "install" directory!'); ?></span>
+                <?php if(file_exists("install") == 1): ?>
+                    <div class="alert alert-danger">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        <span><?php _e('Please delete the "install" directory!'); ?></span>
+                    </div>
+                <?php endif; ?>
             </div>
         <?php endif; ?>
 
 		<!-- Stats Overview -->
-		<div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="small-box">
+        <div class="row">
+            <!-- Servers Stats -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="?route=servers" class="small-box bg-aqua">
                     <div class="inner">
                         <h3><?php echo $servers_count; ?></h3>
                         <p><?php _e('Servers'); ?></p>
@@ -45,14 +50,14 @@
                     <div class="icon">
                         <i class="fa fa-server"></i>
                     </div>
-                    <a href="?route=servers" class="view-all-link">
-                        <?php _e('View all'); ?> <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
+                    <div class="view-all-link">
+                        <?php _e('View all'); ?> →
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="small-box">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="?route=websites" class="small-box bg-green">
                     <div class="inner">
                         <h3><?php echo $websites_count; ?></h3>
                         <p><?php _e('Websites'); ?></p>
@@ -60,14 +65,14 @@
                     <div class="icon">
                         <i class="fa fa-globe"></i>
                     </div>
-                    <a href="?route=websites" class="view-all-link">
-                        <?php _e('View all'); ?> <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
+                    <div class="view-all-link">
+                        <?php _e('View all'); ?> →
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="small-box">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="?route=checks" class="small-box bg-yellow">
                     <div class="inner">
                         <h3><?php echo $checks_count; ?></h3>
                         <p><?php _e('Checks'); ?></p>
@@ -75,14 +80,14 @@
                     <div class="icon">
                         <i class="fa fa-check-circle"></i>
                     </div>
-                    <a href="?route=checks" class="view-all-link">
-                        <?php _e('View all'); ?> <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
+                    <div class="view-all-link">
+                        <?php _e('View all'); ?> →
+                    </div>
+                </a>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="small-box">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <a href="?route=contacts" class="small-box bg-red">
                     <div class="inner">
                         <h3><?php echo $contacts_count; ?></h3>
                         <p><?php _e('Contacts'); ?></p>
@@ -90,10 +95,10 @@
                     <div class="icon">
                         <i class="fa fa-users"></i>
                     </div>
-                    <a href="?route=contacts" class="view-all-link">
-                        <?php _e('View all'); ?> <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
+                    <div class="view-all-link">
+                        <?php _e('View all'); ?> →
+                    </div>
+                </a>
             </div>
         </div>
 
