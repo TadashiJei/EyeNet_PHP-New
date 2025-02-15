@@ -64,8 +64,8 @@ class SegmentTest extends HolodeckTestCase {
                 "segments": [
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "date_created": "2017-02-14T14:36:41Z",
-                        "date_updated": "2017-02-14T14:36:41Z",
+                        "date_created": "2025-02-14T14:36:41Z",
+                        "date_updated": "2025-02-14T14:36:41Z",
                         "service_sid": "ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "sid": "GSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "unique_name": "segment"

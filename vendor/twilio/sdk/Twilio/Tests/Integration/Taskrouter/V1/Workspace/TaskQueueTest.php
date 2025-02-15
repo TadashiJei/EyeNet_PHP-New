@@ -39,8 +39,8 @@ class TaskQueueTest extends HolodeckTestCase {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "assignment_activity_name": "817ca1c5-3a05-11e5-9292-98e0d9a1eb73",
                 "assignment_activity_sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-08-04T01:31:41Z",
-                "date_updated": "2015-08-04T01:31:41Z",
+                "date_created": "2025-08-04T01:31:41Z",
+                "date_updated": "2025-08-04T01:31:41Z",
                 "friendly_name": "81f96435-3a05-11e5-9f81-98e0d9a1eb73",
                 "max_reserved_workers": 1,
                 "links": {
@@ -92,8 +92,8 @@ class TaskQueueTest extends HolodeckTestCase {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "assignment_activity_name": "817ca1c5-3a05-11e5-9292-98e0d9a1eb73",
                 "assignment_activity_sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-08-04T01:31:41Z",
-                "date_updated": "2015-08-04T01:31:41Z",
+                "date_created": "2025-08-04T01:31:41Z",
+                "date_updated": "2025-08-04T01:31:41Z",
                 "friendly_name": "81f96435-3a05-11e5-9f81-98e0d9a1eb73",
                 "max_reserved_workers": 1,
                 "links": {
@@ -156,8 +156,8 @@ class TaskQueueTest extends HolodeckTestCase {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "assignment_activity_name": "817ca1c5-3a05-11e5-9292-98e0d9a1eb73",
                         "assignment_activity_sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "date_created": "2015-08-04T01:31:41Z",
-                        "date_updated": "2015-08-04T01:31:41Z",
+                        "date_created": "2025-08-04T01:31:41Z",
+                        "date_updated": "2025-08-04T01:31:41Z",
                         "friendly_name": "81f96435-3a05-11e5-9f81-98e0d9a1eb73",
                         "max_reserved_workers": 1,
                         "links": {
@@ -244,8 +244,8 @@ class TaskQueueTest extends HolodeckTestCase {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "assignment_activity_name": "817ca1c5-3a05-11e5-9292-98e0d9a1eb73",
                 "assignment_activity_sid": "WAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-08-04T01:31:41Z",
-                "date_updated": "2015-08-04T01:31:41Z",
+                "date_created": "2025-08-04T01:31:41Z",
+                "date_updated": "2025-08-04T01:31:41Z",
                 "friendly_name": "81f96435-3a05-11e5-9f81-98e0d9a1eb73",
                 "max_reserved_workers": 1,
                 "links": {

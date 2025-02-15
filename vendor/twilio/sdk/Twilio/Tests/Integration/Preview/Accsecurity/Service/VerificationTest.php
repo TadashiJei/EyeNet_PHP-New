@@ -47,8 +47,8 @@ class VerificationTest extends HolodeckTestCase {
                 "channel": "sms",
                 "status": "pending",
                 "valid": null,
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z"
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z"
             }
             '
         ));

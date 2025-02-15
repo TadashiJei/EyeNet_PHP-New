@@ -80,8 +80,8 @@ class WorkersCumulativeStatisticsTest extends HolodeckTestCase {
                         "total": 0
                     }
                 ],
-                "start_time": "2015-07-30T20:00:00Z",
-                "end_time": "2015-07-30T20:00:00Z"
+                "start_time": "2025-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z"
             }
             '
         ));

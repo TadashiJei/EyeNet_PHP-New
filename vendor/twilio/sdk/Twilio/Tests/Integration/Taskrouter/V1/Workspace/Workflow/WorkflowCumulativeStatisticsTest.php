@@ -39,7 +39,7 @@ class WorkflowCumulativeStatisticsTest extends HolodeckTestCase {
             {
                 "avg_task_acceptance_time": 100,
                 "tasks_canceled": 100,
-                "start_time": "2015-07-30T20:00:00Z",
+                "start_time": "2025-07-30T20:00:00Z",
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "tasks_moved": 100,
                 "tasks_entered": 100,
@@ -78,7 +78,7 @@ class WorkflowCumulativeStatisticsTest extends HolodeckTestCase {
                     }
                 },
                 "reservations_canceled": 100,
-                "end_time": "2015-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z",
                 "workflow_sid": "WWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "reservations_created": 100,
                 "reservations_accepted": 100,

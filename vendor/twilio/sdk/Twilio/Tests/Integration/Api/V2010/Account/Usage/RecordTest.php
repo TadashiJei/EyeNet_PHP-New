@@ -56,7 +56,7 @@ class RecordTest extends HolodeckTestCase {
                         "count": null,
                         "count_unit": "",
                         "description": "Total Price",
-                        "end_date": "2015-09-04",
+                        "end_date": "2025-09-04",
                         "price": "2192.84855",
                         "price_unit": "usd",
                         "start_date": "2011-08-23",
@@ -70,7 +70,7 @@ class RecordTest extends HolodeckTestCase {
                             "yearly": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yearly.json?Category=totalprice",
                             "yesterday": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yesterday.json?Category=totalprice"
                         },
-                        "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records?Category=totalprice&StartDate=2011-08-23&EndDate=2015-09-04",
+                        "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records?Category=totalprice&StartDate=2011-08-23&EndDate=2025-09-04",
                         "usage": "2192.84855",
                         "usage_unit": "usd"
                     }

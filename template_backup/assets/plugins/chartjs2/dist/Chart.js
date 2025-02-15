@@ -3,7 +3,7 @@
  * http://chartjs.org/
  * Version: 2.6.0
  *
- * Copyright 2017 Nick Downie
+ * Copyright 2025 Nick Downie
  * Released under the MIT license
  * https://github.com/chartjs/Chart.js/blob/master/LICENSE.md
  */
@@ -12376,11 +12376,11 @@ module.exports = function(Chart) {
 				second: 'h:mm:ss a', // 11:20:01 AM
 				minute: 'h:mm:ss a', // 11:20:01 AM
 				hour: 'MMM D, hA', // Sept 4, 5PM
-				day: 'll', // Sep 4 2015
+				day: 'll', // Sep 4 2025
 				week: 'll', // Week 46, or maybe "[W]WW - YYYY" ?
-				month: 'MMM YYYY', // Sept 2015
+				month: 'MMM YYYY', // Sept 2025
 				quarter: '[Q]Q - YYYY', // Q3
-				year: 'YYYY' // 2015
+				year: 'YYYY' // 2025
 			},
 		},
 		ticks: {

@@ -38,7 +38,7 @@ class PhoneNumberTest extends HolodeckTestCase {
             {
                 "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "date_created": "2010-12-10T17:27:34Z",
-                "date_updated": "2015-10-09T11:36:32Z",
+                "date_updated": "2025-10-09T11:36:32Z",
                 "friendly_name": "(415) 867-5309",
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "phone_number": "+14158675309",
@@ -131,7 +131,7 @@ class PhoneNumberTest extends HolodeckTestCase {
             {
                 "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "date_created": "2010-12-10T17:27:34Z",
-                "date_updated": "2015-10-09T11:36:32Z",
+                "date_updated": "2025-10-09T11:36:32Z",
                 "friendly_name": "(415) 867-5309",
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "phone_number": "+14158675309",
@@ -204,7 +204,7 @@ class PhoneNumberTest extends HolodeckTestCase {
                     {
                         "sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "date_created": "2010-12-10T17:27:34Z",
-                        "date_updated": "2015-10-09T11:36:32Z",
+                        "date_updated": "2025-10-09T11:36:32Z",
                         "friendly_name": "(415) 867-5309",
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "phone_number": "+14158675309",

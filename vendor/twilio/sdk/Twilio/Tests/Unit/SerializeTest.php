@@ -64,8 +64,8 @@ class SerializeTest extends UnitTest {
     public function testIso8601DatePassString() {
         // Backwards compatibility, prior to 5.5.0 date parameters were passed as strings.
         // After 5.5.0 parameters can be DateTime objects or strings.
-        $actual = Serialize::iso8601DateTime("2017-02-01");
-        $this->assertEquals("2017-02-01", $actual);
+        $actual = Serialize::iso8601DateTime("2025-02-01");
+        $this->assertEquals("2025-02-01", $actual);
     }
 
     public function testIso8601DateSameTimezone() {
@@ -75,11 +75,11 @@ class SerializeTest extends UnitTest {
     }
 
     public function testIso8601DateDifferentTimezone() {
-        $date = new \DateTime("2017-02-01T17:15:41-0800");
+        $date = new \DateTime("2025-02-01T17:15:41-0800");
         $actual = Serialize::iso8601Date($date);
         // assert original date time object is unchanged
-        $this->assertEquals("2017-02-01T17:15:41-0800", $date->format(\DateTime::ISO8601));
-        $this->assertEquals("2017-02-02", $actual);
+        $this->assertEquals("2025-02-01T17:15:41-0800", $date->format(\DateTime::ISO8601));
+        $this->assertEquals("2025-02-02", $actual);
     }
 
     public function testIso8601DateTimeNull() {
@@ -95,22 +95,22 @@ class SerializeTest extends UnitTest {
     public function testIso8601DateTimePassString() {
         // Backwards compatibility, prior to 5.5.0 date parameters were passed as strings.
         // After 5.5.0 parameters can be DateTime objects or strings.
-        $actual = Serialize::iso8601DateTime("2017-02-01T17:15:41Z");
-        $this->assertEquals("2017-02-01T17:15:41Z", $actual);
+        $actual = Serialize::iso8601DateTime("2025-02-01T17:15:41Z");
+        $this->assertEquals("2025-02-01T17:15:41Z", $actual);
     }
 
     public function testIso8601DateTimeSameTimezone() {
-        $date = new \DateTime("2017-02-01T17:15:41", new \DateTimeZone("UTC"));
+        $date = new \DateTime("2025-02-01T17:15:41", new \DateTimeZone("UTC"));
         $actual = Serialize::iso8601DateTime($date);
-        $this->assertEquals("2017-02-01T17:15:41Z", $actual);
+        $this->assertEquals("2025-02-01T17:15:41Z", $actual);
     }
 
     public function testIso8601DateTimeDifferentTimezone() {
-        $date = new \DateTime("2017-02-01T17:15:41-0800");
+        $date = new \DateTime("2025-02-01T17:15:41-0800");
         $actual = Serialize::iso8601DateTime($date);
         // assert original date time object is unchanged
-        $this->assertEquals("2017-02-01T17:15:41-0800", $date->format(\DateTime::ISO8601));
-        $this->assertEquals("2017-02-02T01:15:41Z", $actual);
+        $this->assertEquals("2025-02-01T17:15:41-0800", $date->format(\DateTime::ISO8601));
+        $this->assertEquals("2025-02-02T01:15:41Z", $actual);
     }
 
     public function testBooleanToString() {

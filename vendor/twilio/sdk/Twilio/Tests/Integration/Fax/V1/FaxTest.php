@@ -37,8 +37,8 @@ class FaxTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "api_version": "v1",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "direction": "outbound",
                 "from": "+14155551234",
                 "media_url": "https://www.example.com/fax.pdf",
@@ -111,8 +111,8 @@ class FaxTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "api_version": "v1",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
+                        "date_updated": "2025-07-30T20:00:00Z",
                         "direction": "outbound",
                         "from": "+14155551234",
                         "media_url": "https://www.example.com/fax.pdf",
@@ -174,8 +174,8 @@ class FaxTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "api_version": "v1",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "direction": "outbound",
                 "from": "+14155551234",
                 "media_url": null,
@@ -222,8 +222,8 @@ class FaxTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "api_version": "v1",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "direction": "outbound",
                 "from": "+14155551234",
                 "media_url": null,

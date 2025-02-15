@@ -38,8 +38,8 @@ class SyncMapTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "created_by": "created_by",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "links": {
                     "items": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                     "permissions": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"
@@ -108,8 +108,8 @@ class SyncMapTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "created_by": "created_by",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "links": {
                     "items": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                     "permissions": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"
@@ -178,8 +178,8 @@ class SyncMapTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "created_by": "created_by",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
+                        "date_updated": "2025-07-30T20:00:00Z",
                         "links": {
                             "items": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Items",
                             "permissions": "https://preview.twilio.com/Sync/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Maps/MPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Permissions"

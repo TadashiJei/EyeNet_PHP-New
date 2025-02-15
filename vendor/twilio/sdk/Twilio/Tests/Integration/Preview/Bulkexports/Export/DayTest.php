@@ -38,7 +38,7 @@ class DayTest extends HolodeckTestCase {
             {
                 "days": [
                     {
-                        "day": "2017-05-01",
+                        "day": "2025-05-01",
                         "size": 1234,
                         "resource_type": "Calls"
                     }

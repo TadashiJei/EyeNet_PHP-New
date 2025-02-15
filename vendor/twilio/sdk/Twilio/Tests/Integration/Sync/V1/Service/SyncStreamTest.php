@@ -38,8 +38,8 @@ class SyncStreamTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "created_by": "created_by",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "links": {
                     "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                 },
@@ -106,8 +106,8 @@ class SyncStreamTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "created_by": "created_by",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "links": {
                     "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                 },
@@ -174,8 +174,8 @@ class SyncStreamTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "created_by": "created_by",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
+                        "date_updated": "2025-07-30T20:00:00Z",
                         "links": {
                             "messages": "https://sync.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Streams/TOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages"
                         },

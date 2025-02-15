@@ -57,10 +57,10 @@ class YesterdayTest extends HolodeckTestCase {
                         "count": "0",
                         "count_unit": "messages",
                         "description": "Short Code Inbound SMS",
-                        "end_date": "2015-09-03",
+                        "end_date": "2025-09-03",
                         "price": "0",
                         "price_unit": "usd",
-                        "start_date": "2015-09-03",
+                        "start_date": "2025-09-03",
                         "subresource_uris": {
                             "all_time": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/AllTime.json?Category=sms-inbound-shortcode",
                             "daily": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Daily.json?Category=sms-inbound-shortcode",
@@ -71,7 +71,7 @@ class YesterdayTest extends HolodeckTestCase {
                             "yearly": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yearly.json?Category=sms-inbound-shortcode",
                             "yesterday": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yesterday.json?Category=sms-inbound-shortcode"
                         },
-                        "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yesterday?Category=sms-inbound-shortcode&StartDate=2015-09-03&EndDate=2015-09-03",
+                        "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Usage/Records/Yesterday?Category=sms-inbound-shortcode&StartDate=2025-09-03&EndDate=2025-09-03",
                         "usage": "0",
                         "usage_unit": "messages"
                     }

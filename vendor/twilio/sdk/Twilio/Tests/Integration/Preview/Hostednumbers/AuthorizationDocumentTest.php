@@ -40,8 +40,8 @@ class AuthorizationDocumentTest extends HolodeckTestCase {
                     "aaa@twilio.com",
                     "bbb@twilio.com"
                 ],
-                "date_created": "2017-03-28T20:06:39Z",
-                "date_updated": "2017-03-28T20:06:39Z",
+                "date_created": "2025-03-28T20:06:39Z",
+                "date_updated": "2025-03-28T20:06:39Z",
                 "email": "test@twilio.com",
                 "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "status": "signing",
@@ -79,8 +79,8 @@ class AuthorizationDocumentTest extends HolodeckTestCase {
                     "test1@twilio.com",
                     "test2@twilio.com"
                 ],
-                "date_created": "2017-03-28T20:06:39Z",
-                "date_updated": "2017-03-28T20:06:39Z",
+                "date_created": "2025-03-28T20:06:39Z",
+                "date_updated": "2025-03-28T20:06:39Z",
                 "email": "test+hosted@twilio.com",
                 "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "status": "signing",
@@ -153,8 +153,8 @@ class AuthorizationDocumentTest extends HolodeckTestCase {
                             "test1@twilio.com",
                             "test2@twilio.com"
                         ],
-                        "date_created": "2017-03-28T20:06:39Z",
-                        "date_updated": "2017-03-28T20:06:39Z",
+                        "date_created": "2025-03-28T20:06:39Z",
+                        "date_updated": "2025-03-28T20:06:39Z",
                         "email": "test+hosted@twilio.com",
                         "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "status": "signing",
@@ -202,8 +202,8 @@ class AuthorizationDocumentTest extends HolodeckTestCase {
                     "test1@twilio.com",
                     "test2@twilio.com"
                 ],
-                "date_created": "2017-03-28T20:06:39Z",
-                "date_updated": "2017-03-28T20:06:39Z",
+                "date_created": "2025-03-28T20:06:39Z",
+                "date_updated": "2025-03-28T20:06:39Z",
                 "email": "test+hosted@twilio.com",
                 "sid": "PXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "status": "signing",

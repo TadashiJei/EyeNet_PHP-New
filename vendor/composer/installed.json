@@ -58,7 +58,7 @@
             "reference": "b16248c0a59a6555437744db8b78c0589cfc32f9",
             "shasum": ""
         },
-        "time": "2017-02-02T15:38:40+00:00",
+        "time": "2025-02-02T15:38:40+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -191,7 +191,7 @@
         "require": {
             "php": ">=5.1.2"
         },
-        "time": "2017-02-12T21:14:52+00:00",
+        "time": "2025-02-12T21:14:52+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -261,7 +261,7 @@
         "suggest": {
             "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
         },
-        "time": "2017-07-26T21:00:20+00:00",
+        "time": "2025-07-26T21:00:20+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -432,7 +432,7 @@
             "apigen/apigen": "^4.1",
             "phpunit/phpunit": "4.5.*"
         },
-        "time": "2017-10-28T00:32:51+00:00",
+        "time": "2025-10-28T00:32:51+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

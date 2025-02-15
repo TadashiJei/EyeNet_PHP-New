@@ -37,8 +37,8 @@ class TokenTest extends HolodeckTestCase {
             '
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "Fri, 24 Jul 2015 18:43:58 +0000",
-                "date_updated": "Fri, 24 Jul 2015 18:43:58 +0000",
+                "date_created": "Fri, 24 Jul 2025 18:43:58 +0000",
+                "date_updated": "Fri, 24 Jul 2025 18:43:58 +0000",
                 "ice_servers": [
                     {
                         "url": "stun:global.stun:3478?transport=udp"

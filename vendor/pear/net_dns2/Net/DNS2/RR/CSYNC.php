@@ -6,7 +6,7 @@
  *
  * PHP Version 5
  *
- * Copyright (c) 2015, Mike Pultz <mike@mikepultz.com>.
+ * Copyright (c) 2025, Mike Pultz <mike@mikepultz.com>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -41,7 +41,7 @@
  * @category  Networking
  * @package   Net_DNS2
  * @author    Mike Pultz <mike@mikepultz.com>
- * @copyright 2015 Mike Pultz <mike@mikepultz.com>
+ * @copyright 2025 Mike Pultz <mike@mikepultz.com>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
  * @version   SVN: $Id$
  * @link      http://pear.php.net/package/Net_DNS2

@@ -42,8 +42,8 @@ class CredentialTest extends HolodeckTestCase {
                         "friendly_name": "Test slow create",
                         "type": "apn",
                         "sandbox": "False",
-                        "date_created": "2015-10-07T17:50:01Z",
-                        "date_updated": "2015-10-07T17:50:01Z",
+                        "date_created": "2025-10-07T17:50:01Z",
+                        "date_updated": "2025-10-07T17:50:01Z",
                         "url": "https://chat.twilio.com/v1/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                     }
                 ],
@@ -117,8 +117,8 @@ class CredentialTest extends HolodeckTestCase {
                 "friendly_name": "Test slow create",
                 "type": "apn",
                 "sandbox": "False",
-                "date_created": "2015-10-07T17:50:01Z",
-                "date_updated": "2015-10-07T17:50:01Z",
+                "date_created": "2025-10-07T17:50:01Z",
+                "date_updated": "2025-10-07T17:50:01Z",
                 "url": "https://chat.twilio.com/v1/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             }
             '
@@ -153,8 +153,8 @@ class CredentialTest extends HolodeckTestCase {
                 "friendly_name": "Test slow create",
                 "type": "apn",
                 "sandbox": "False",
-                "date_created": "2015-10-07T17:50:01Z",
-                "date_updated": "2015-10-07T17:50:01Z",
+                "date_created": "2025-10-07T17:50:01Z",
+                "date_updated": "2025-10-07T17:50:01Z",
                 "url": "https://chat.twilio.com/v1/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             }
             '
@@ -189,8 +189,8 @@ class CredentialTest extends HolodeckTestCase {
                 "friendly_name": "Test slow create",
                 "type": "apn",
                 "sandbox": "False",
-                "date_created": "2015-10-07T17:50:01Z",
-                "date_updated": "2015-10-07T17:50:01Z",
+                "date_created": "2025-10-07T17:50:01Z",
+                "date_updated": "2025-10-07T17:50:01Z",
                 "url": "https://chat.twilio.com/v1/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             }
             '

@@ -167,7 +167,7 @@ class Client
             $this->ConversationsAPIHttpClient = new Common\HttpClient(self::CONVERSATIONSAPI_ENDPOINT);
             $this->HttpClient = new Common\HttpClient(self::ENDPOINT);
             $this->VoiceAPIHttpClient = new Common\HttpClient(self::VOICEAPI_ENDPOINT, 10, 2, array(
-                'X-MessageBird-Version' => '20170314',
+                'X-MessageBird-Version' => '20250314',
            ));
         } else {
             $this->ChatAPIHttpClient = $httpClient;

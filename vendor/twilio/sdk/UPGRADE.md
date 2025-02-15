@@ -3,7 +3,7 @@
 _After `5.1.1` all `MINOR` and `MAJOR` version bumps will have upgrade notes
 posted here._
 
-[2017-09-28] 5.1x.x to 5.15.x
+[2025-09-28] 5.1x.x to 5.15.x
 ---------------------------
 
 ### CHANGED - `Body` parameter on Chat `Message` creation is no longer required.
@@ -32,12 +32,12 @@ $client->chat->v2->service('IS123')->channel('CH123')->message->create(array("bo
 ```
 
 
-[2017-05-22] 5.9.x to 5.10.x
+[2025-05-22] 5.9.x to 5.10.x
 ---------------------------
 
 ### CHANGED - Rename room `Recordings` resource to `RoomRecordings` to avoid class name conflict (backwards incompatible).
 
-[2017-03-03] 5.5.x to 5.6.x
+[2025-03-03] 5.5.x to 5.6.x
 ---------------------------
 
 ### CHANGED - Removed end of life Sandbox Resource
@@ -122,7 +122,7 @@ $client->chat->messages->read(array(
 Options arrays are placed at the beginning of the function signature if the resource accepts optional params and is ommited if the resource does not accept any. Chat messages previously did not accept any optional params and now do.
 
 
-[2017-02-01] 5.4.x to 5.5.x
+[2025-02-01] 5.4.x to 5.5.x
 ---------------------------
 
 ### CHANGED - Removed uri field from Pricing Phone Number Countries resource
@@ -482,7 +482,7 @@ up to parity with other exceptions.
 The Exception class was changed to reflect that the failure is not in processing
 the response (Deserialization) but that the response is invalid (Rest).
 
-[2015-08-30] 5.2.x to 5.3.x
+[2025-08-30] 5.2.x to 5.3.x
 ---------------------------
 
 ### CHANGED - SIP Credential Update

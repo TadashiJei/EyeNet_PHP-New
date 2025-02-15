@@ -40,8 +40,8 @@ class MessageInteractionTest extends HolodeckTestCase {
             {
                 "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "data": "body",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "participant_sid": "KPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "inbound_participant_sid": null,
                 "inbound_resource_sid": null,
@@ -94,8 +94,8 @@ class MessageInteractionTest extends HolodeckTestCase {
             {
                 "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "data": "data",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "participant_sid": "KPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "inbound_participant_sid": null,
                 "inbound_resource_sid": null,

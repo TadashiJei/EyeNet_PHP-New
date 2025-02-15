@@ -37,7 +37,7 @@ class RecordingTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "status": "processing",
-                "date_created": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
                 "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "size": 0,
@@ -108,7 +108,7 @@ class RecordingTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "status": "completed",
-                        "date_created": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
                         "sid": "RTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "source_sid": "MTaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "size": 23,

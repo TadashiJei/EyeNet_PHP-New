@@ -41,7 +41,7 @@ class TaskQueueCumulativeStatisticsTest extends HolodeckTestCase {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "reservations_rejected": 100,
                 "tasks_completed": 100,
-                "end_time": "2015-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z",
                 "tasks_entered": 100,
                 "tasks_canceled": 100,
                 "reservations_accepted": 100,
@@ -82,7 +82,7 @@ class TaskQueueCumulativeStatisticsTest extends HolodeckTestCase {
                         }
                     }
                 },
-                "start_time": "2015-07-30T20:00:00Z",
+                "start_time": "2025-07-30T20:00:00Z",
                 "tasks_moved": 100,
                 "reservations_canceled": 100,
                 "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",

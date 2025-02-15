@@ -40,8 +40,8 @@ class ServiceTest extends HolodeckTestCase {
                 "friendly_name": "friendly_name",
                 "default_ttl": 3600,
                 "callback_url": "http://www.example.com",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "url": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "sessions": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions",
@@ -119,8 +119,8 @@ class ServiceTest extends HolodeckTestCase {
                 "friendly_name": "friendly_name",
                 "default_ttl": 3600,
                 "callback_url": "http://www.example.com",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "url": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "sessions": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions",
@@ -185,8 +185,8 @@ class ServiceTest extends HolodeckTestCase {
                 "friendly_name": "friendly_name",
                 "default_ttl": 3600,
                 "callback_url": "http://www.example.com",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "url": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "sessions": "https://proxy.twilio.com/v1/Services/KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Sessions",

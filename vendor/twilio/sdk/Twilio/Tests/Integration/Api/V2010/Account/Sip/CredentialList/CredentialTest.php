@@ -42,8 +42,8 @@ class CredentialTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "credential_list_sid": "CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "date_created": "Wed, 19 Aug 2015 19:48:45 +0000",
-                        "date_updated": "Wed, 19 Aug 2015 19:48:45 +0000",
+                        "date_created": "Wed, 19 Aug 2025 19:48:45 +0000",
+                        "date_updated": "Wed, 19 Aug 2025 19:48:45 +0000",
                         "sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/CredentialLists/CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
                         "username": "1440013725.28"
@@ -129,8 +129,8 @@ class CredentialTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "credential_list_sid": "CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "Wed, 19 Aug 2015 19:48:45 +0000",
-                "date_updated": "Wed, 19 Aug 2015 19:48:45 +0000",
+                "date_created": "Wed, 19 Aug 2025 19:48:45 +0000",
+                "date_updated": "Wed, 19 Aug 2025 19:48:45 +0000",
                 "sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/CredentialLists/CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
                 "username": "1440013725.28"
@@ -170,8 +170,8 @@ class CredentialTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "credential_list_sid": "CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "Wed, 19 Aug 2015 19:48:45 +0000",
-                "date_updated": "Wed, 19 Aug 2015 19:48:45 +0000",
+                "date_created": "Wed, 19 Aug 2025 19:48:45 +0000",
+                "date_updated": "Wed, 19 Aug 2025 19:48:45 +0000",
                 "sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/CredentialLists/CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
                 "username": "1440013725.28"
@@ -211,8 +211,8 @@ class CredentialTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "credential_list_sid": "CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "Wed, 19 Aug 2015 19:48:45 +0000",
-                "date_updated": "Wed, 19 Aug 2015 19:48:45 +0000",
+                "date_created": "Wed, 19 Aug 2025 19:48:45 +0000",
+                "date_updated": "Wed, 19 Aug 2025 19:48:45 +0000",
                 "sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/SIP/CredentialLists/CLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Credentials/CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json",
                 "username": "1440013725.28"

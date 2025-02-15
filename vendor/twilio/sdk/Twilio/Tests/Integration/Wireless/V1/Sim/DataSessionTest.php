@@ -50,8 +50,8 @@ class DataSessionTest extends HolodeckTestCase {
                         "cell_location_estimate": {},
                         "packets_uploaded": 0,
                         "packets_downloaded": 0,
-                        "last_updated": "2015-07-30T20:00:00Z",
-                        "start": "2015-07-30T20:00:00Z",
+                        "last_updated": "2025-07-30T20:00:00Z",
+                        "start": "2025-07-30T20:00:00Z",
                         "end": null
                     },
                     {
@@ -67,9 +67,9 @@ class DataSessionTest extends HolodeckTestCase {
                         "cell_location_estimate": {},
                         "packets_uploaded": 0,
                         "packets_downloaded": 0,
-                        "last_updated": "2015-07-30T20:00:00Z",
-                        "start": "2015-07-30T20:00:00Z",
-                        "end": "2015-07-30T20:00:00Z"
+                        "last_updated": "2025-07-30T20:00:00Z",
+                        "start": "2025-07-30T20:00:00Z",
+                        "end": "2025-07-30T20:00:00Z"
                     }
                 ],
                 "meta": {

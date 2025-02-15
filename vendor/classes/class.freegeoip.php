@@ -5,7 +5,7 @@
 	* Basic PHP wrapper for the FreeGeoIp Geolocation API <https://freegeoip.net/>
 	*
 	* @author Daan De Smedt <daan.desmedt@sdp.be>
-	* @date 29/03/2017
+	* @date 29/03/2025
 	*
 	*/
 	class FreeGeoIp {

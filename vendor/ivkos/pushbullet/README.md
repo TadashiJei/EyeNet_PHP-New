@@ -139,7 +139,7 @@ Arguments:
 
 ```php
 $pb->device("Galaxy S4")->pushFile(
-	"/home/ivkos/photos/20150314_092653.jpg",
+	"/home/ivkos/photos/20250314_092653.jpg",
 	"image/jpeg",
 	"Look at this photo!",
 	"I think it's pretty cool",

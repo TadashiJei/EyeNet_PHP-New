@@ -48,8 +48,8 @@ class TrunkTest extends HolodeckTestCase {
                 },
                 "auth_type": "",
                 "auth_type_set": [],
-                "date_created": "2015-01-02T11:23:45Z",
-                "date_updated": "2015-01-02T11:23:45Z",
+                "date_created": "2025-01-02T11:23:45Z",
+                "date_updated": "2025-01-02T11:23:45Z",
                 "url": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "origination_urls": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OriginationUrls",
@@ -123,8 +123,8 @@ class TrunkTest extends HolodeckTestCase {
                 },
                 "auth_type": "",
                 "auth_type_set": [],
-                "date_created": "2015-01-02T11:23:45Z",
-                "date_updated": "2015-01-02T11:23:45Z",
+                "date_created": "2025-01-02T11:23:45Z",
+                "date_updated": "2025-01-02T11:23:45Z",
                 "url": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "origination_urls": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OriginationUrls",
@@ -184,8 +184,8 @@ class TrunkTest extends HolodeckTestCase {
                         },
                         "auth_type": "",
                         "auth_type_set": [],
-                        "date_created": "2015-01-02T11:23:45Z",
-                        "date_updated": "2015-01-02T11:23:45Z",
+                        "date_created": "2025-01-02T11:23:45Z",
+                        "date_updated": "2025-01-02T11:23:45Z",
                         "url": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "links": {
                             "origination_urls": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OriginationUrls",
@@ -260,8 +260,8 @@ class TrunkTest extends HolodeckTestCase {
                 },
                 "auth_type": "",
                 "auth_type_set": [],
-                "date_created": "2015-01-02T11:23:45Z",
-                "date_updated": "2015-01-02T11:23:45Z",
+                "date_created": "2025-01-02T11:23:45Z",
+                "date_updated": "2025-01-02T11:23:45Z",
                 "url": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "origination_urls": "http://trunking.twilio.com/v1/Trunks/TRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/OriginationUrls",

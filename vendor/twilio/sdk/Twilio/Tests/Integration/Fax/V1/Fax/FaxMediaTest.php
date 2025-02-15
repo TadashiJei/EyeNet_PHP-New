@@ -38,8 +38,8 @@ class FaxMediaTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "content_type": "application/pdf",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "fax_sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media/MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -79,8 +79,8 @@ class FaxMediaTest extends HolodeckTestCase {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "fax_sid": "FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "content_type": "application/pdf",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
+                        "date_updated": "2025-07-30T20:00:00Z",
                         "url": "https://fax.twilio.com/v1/Faxes/FXaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media/MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                     }
                 ],

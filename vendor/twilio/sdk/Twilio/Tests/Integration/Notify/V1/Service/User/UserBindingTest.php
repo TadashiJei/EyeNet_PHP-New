@@ -41,8 +41,8 @@ class UserBindingTest extends HolodeckTestCase {
                 "address": "address",
                 "binding_type": "binding_type",
                 "credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "endpoint": "endpoint",
                 "links": {
                     "user": "https://notify.twilio.com/v1/Services/ISaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Users/identity"
@@ -124,8 +124,8 @@ class UserBindingTest extends HolodeckTestCase {
                 "address": "address",
                 "binding_type": "binding_type",
                 "credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "endpoint": "endpoint",
                 "identity": "identity",
                 "links": {
@@ -158,8 +158,8 @@ class UserBindingTest extends HolodeckTestCase {
                 "address": "address",
                 "binding_type": "binding_type",
                 "credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "endpoint": "endpoint",
                 "identity": "identity",
                 "links": {
@@ -236,8 +236,8 @@ class UserBindingTest extends HolodeckTestCase {
                         "address": "address",
                         "binding_type": "binding_type",
                         "credential_sid": "CRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                        "date_created": "2015-07-30T20:00:00Z",
-                        "date_updated": "2015-07-30T20:00:00Z",
+                        "date_created": "2025-07-30T20:00:00Z",
+                        "date_updated": "2025-07-30T20:00:00Z",
                         "endpoint": "endpoint",
                         "identity": "identity",
                         "links": {

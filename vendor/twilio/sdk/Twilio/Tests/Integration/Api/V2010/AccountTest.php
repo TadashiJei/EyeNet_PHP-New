@@ -135,7 +135,7 @@ class AccountTest extends HolodeckTestCase {
                     {
                         "auth_token": "foobar",
                         "date_created": "Tue, 23 Aug 2011 20:58:45 +0000",
-                        "date_updated": "Fri, 04 Sep 2015 22:53:32 +0000",
+                        "date_updated": "Fri, 04 Sep 2025 22:53:32 +0000",
                         "friendly_name": "Sub account for testing requests authed with parent account",
                         "owner_account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",

@@ -36,8 +36,8 @@ class RoomTest extends HolodeckTestCase {
             '
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "status": "in-progress",
                 "type": "peer-to-peer",
                 "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -51,7 +51,7 @@ class RoomTest extends HolodeckTestCase {
                 "video_codecs": [
                     "VP8"
                 ],
-                "end_time": "2015-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z",
                 "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "recordings": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
@@ -85,8 +85,8 @@ class RoomTest extends HolodeckTestCase {
             '
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "status": "in-progress",
                 "type": "peer-to-peer",
                 "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -100,7 +100,7 @@ class RoomTest extends HolodeckTestCase {
                 "video_codecs": [
                     "VP8"
                 ],
-                "end_time": "2015-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z",
                 "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {
                     "recordings": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Recordings"
@@ -161,15 +161,15 @@ class RoomTest extends HolodeckTestCase {
                     {
                         "sid": "RM4070b618362c1682b2385b1f9982833c",
                         "status": "completed",
-                        "date_created": "2017-04-03T22:21:49Z",
-                        "date_updated": "2017-04-03T22:21:51Z",
+                        "date_created": "2025-04-03T22:21:49Z",
+                        "date_updated": "2025-04-03T22:21:51Z",
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "type": "peer-to-peer",
                         "enable_turn": true,
                         "unique_name": "RM4070b618362c1682b2385b1f9982833c",
                         "status_callback": null,
                         "status_callback_method": "POST",
-                        "end_time": "2017-04-03T22:21:51Z",
+                        "end_time": "2025-04-03T22:21:51Z",
                         "duration": 2,
                         "max_participants": 10,
                         "record_participants_on_connect": false,
@@ -224,8 +224,8 @@ class RoomTest extends HolodeckTestCase {
             '
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "status": "completed",
                 "type": "peer-to-peer",
                 "sid": "RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
@@ -238,7 +238,7 @@ class RoomTest extends HolodeckTestCase {
                 "video_codecs": [
                     "VP8"
                 ],
-                "end_time": "2015-07-30T20:00:00Z",
+                "end_time": "2025-07-30T20:00:00Z",
                 "duration": 10,
                 "url": "https://video.twilio.com/v1/Rooms/RMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "links": {

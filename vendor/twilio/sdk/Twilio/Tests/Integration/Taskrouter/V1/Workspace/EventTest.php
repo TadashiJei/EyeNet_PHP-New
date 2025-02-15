@@ -51,7 +51,7 @@ class EventTest extends HolodeckTestCase {
                     "workspace_name": "WorkspaceName",
                     "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 },
-                "event_date": "2015-02-07T00:32:41Z",
+                "event_date": "2025-02-07T00:32:41Z",
                 "event_type": "worker.activity",
                 "resource_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "resource_type": "worker",
@@ -107,7 +107,7 @@ class EventTest extends HolodeckTestCase {
                             "workspace_name": "WorkspaceName",
                             "workspace_sid": "WSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                         },
-                        "event_date": "2015-02-07T00:32:41Z",
+                        "event_date": "2025-02-07T00:32:41Z",
                         "event_type": "worker.activity",
                         "resource_sid": "WKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "resource_type": "worker",

@@ -53,8 +53,8 @@ class VoiceTest extends BaseTest
       "status": "starting",
       "source": "31644556677",
       "destination": "31612345678",
-      "createdAt": "2017-08-30T07:35:37Z",
-      "updatedAt": "2017-08-30T07:35:37Z",
+      "createdAt": "2025-08-30T07:35:37Z",
+      "updatedAt": "2025-08-30T07:35:37Z",
       "endedAt": null
     }
   ],
@@ -126,8 +126,8 @@ class VoiceTest extends BaseTest
        "id": "87c377ce-1629-48b6-ad01-4b4fd069c53c",
        "recordingID": "baz",
        "error": null,
-       "createdAt": "2017-06-20T10:03:14Z",
-       "updatedAt": "2017-06-20T10:03:14Z",
+       "createdAt": "2025-06-20T10:03:14Z",
+       "updatedAt": "2025-06-20T10:03:14Z",
        "_links": {
          "self": "/calls/foo/legs/bar/recordings/baz/transcriptions/87c377ce-1629-48b6-ad01-4b4fd069c53c",
          "file": "/calls/foo/legs/bar/recordings/baz/transcriptions/87c377ce-1629-48b6-ad01-4b4fd069c53c.txt"
@@ -202,8 +202,8 @@ class VoiceTest extends BaseTest
       "id": "534e1848-235f-482d-983d-e3e11a04f58a",
       "url": "https://example.com/",
       "token": "foobar",
-      "createdAt": "2017-03-15T13:28:32Z",
-      "updatedAt": "2017-03-15T13:28:32Z",
+      "createdAt": "2025-03-15T13:28:32Z",
+      "updatedAt": "2025-03-15T13:28:32Z",
       "_links": {
         "self": "/webhooks/534e1848-235f-482d-983d-e3e11a04f58a"
       }
@@ -235,8 +235,8 @@ class VoiceTest extends BaseTest
       "id": "foobar123",
       "url": "https://example.com/baz",
       "token": "foobar",
-      "createdAt": "2017-03-15T13:27:02Z",
-      "updatedAt": "2017-03-15T13:28:01Z"
+      "createdAt": "2025-03-15T13:27:02Z",
+      "updatedAt": "2025-03-15T13:28:01Z"
     }
   ],
   "_links": {
@@ -303,8 +303,8 @@ class VoiceTest extends BaseTest
           }
         }
       ],
-      "createdAt": "2017-03-06T13:34:14Z",
-      "updatedAt": "2017-03-06T13:34:14Z",
+      "createdAt": "2025-03-06T13:34:14Z",
+      "updatedAt": "2025-03-06T13:34:14Z",
       "_links": {
         "self": "/call-flows/de3ed163-d5fc-45f4-b8c4-7eea7458c635"
       }
@@ -343,8 +343,8 @@ class VoiceTest extends BaseTest
           }
         }
       ],
-      "createdAt": "2017-03-06T13:34:14Z",
-      "updatedAt": "2017-03-06T15:02:38Z"
+      "createdAt": "2025-03-06T13:34:14Z",
+      "updatedAt": "2025-03-06T15:02:38Z"
     }
   ],
   "_links": {

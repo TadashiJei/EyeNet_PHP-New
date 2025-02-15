@@ -1,7 +1,7 @@
 ##
 ## Bundle of CA Root Certificates
 ##
-## Certificate data from Mozilla as of: Wed Jan 18 04:12:05 2017 GMT
+## Certificate data from Mozilla as of: Wed Jan 18 04:12:05 2025 GMT
 ##
 ## This is a bundle of X.509 certificates of public Certificate Authorities
 ## (CA). These were automatically extracted from Mozilla's root certificates
@@ -3704,7 +3704,7 @@ is7VmFxWlgPF7ncGNf/P5O4/E2Hu29othfDNrp2yGAlFw5Khchf8R7agCyzxxN5DaAhqXzvwdmP7
 zAYspsbiDrW5viSP
 -----END CERTIFICATE-----
 
-Hellenic Academic and Research Institutions RootCA 2015
+Hellenic Academic and Research Institutions RootCA 2025
 =======================================================
 -----BEGIN CERTIFICATE-----
 MIIGCzCCA/OgAwIBAgIBADANBgkqhkiG9w0BAQsFADCBpjELMAkGA1UEBhMCR1IxDzANBgNVBAcT
@@ -3737,7 +3737,7 @@ JI7ZjnHKe7iG2rKPmT4dEw0SEe7Uq/DpFXYC5ODfqiAeW2GFZECpkJcNrVPSWh2HagCXZWK0vm9q
 p/UsQu0yrbYhnr68
 -----END CERTIFICATE-----
 
-Hellenic Academic and Research Institutions ECC RootCA 2015
+Hellenic Academic and Research Institutions ECC RootCA 2025
 ===========================================================
 -----BEGIN CERTIFICATE-----
 MIICwzCCAkqgAwIBAgIBADAKBggqhkjOPQQDAjCBqjELMAkGA1UEBhMCR1IxDzANBgNVBAcTBkF0

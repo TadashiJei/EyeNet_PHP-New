@@ -1,21 +1,21 @@
 twilio-php Changelog
 ====================
 
-[2017-10-27] Version 5.15.4
+[2025-10-27] Version 5.15.4
 ----------------------------
 **Chat**
 - Add Binding resource
 - Add UserBinding resource
 
 
-[2017-10-20] Version 5.15.3
+[2025-10-20] Version 5.15.3
 ----------------------------
 **Api**
 - Add `address_sid` param to IncomingPhoneNumbers create and update
 - Add 'fax_enabled' option for Phone Number Search
 
 
-[2017-10-13] Version 5.15.2
+[2025-10-13] Version 5.15.2
 ----------------------------
 **Api**
 - Add `smart_encoded` param for Messages
@@ -32,7 +32,7 @@ twilio-php Changelog
 - Added `ip_address` to sim resource
 
 
-[2017-10-06] Version 5.15.1
+[2025-10-06] Version 5.15.1
 ----------------------------
 **Preview**
 - Add `acc_security` (authy-phone-verification) initial api-definitions
@@ -41,7 +41,7 @@ twilio-php Changelog
 - [bi] Less verbose naming of cumulative and real time statistics
 
 
-[2017-09-28] Version 5.15.0
+[2025-09-28] Version 5.15.0
 ----------------------------
 **Library**
 - Add warnings when trying to import/use objects from legacy versions of the library.
@@ -67,19 +67,19 @@ twilio-php Changelog
 - Add video_codecs as a property of room to make it externally visible.
 
 
-[2017-09-15] Version 5.14.1
+[2025-09-15] Version 5.14.1
 ----------------------------
 **Api**
 - Add `sip_registration` property on SIP Domains
 - Add new video and market usage category keys
 
 
-[2017-09-01] Version 5.14.0
+[2025-09-01] Version 5.14.0
 ----------------------------
 **TwiML**
 - Add classes for all TwiML verbs.
 
-[2017-09-01] Version 5.13.4
+[2025-09-01] Version 5.13.4
 ----------------------------
 **Sync**
 - Add support for Streams
@@ -88,7 +88,7 @@ twilio-php Changelog
 - Added DataSessions sub-resource to Sims.
 
 
-[2017-08-25] Version 5.13.3
+[2025-08-25] Version 5.13.3
 ----------------------------
 **Library**
 - Add `lastRequest` and `lastResponse` properties to `CurlClient` to help debugging.
@@ -104,7 +104,7 @@ twilio-php Changelog
 - New `media_region` parameter when creating a room, which controls which region media will be served out of.
 
 
-[2017-08-18] Version 5.13.2
+[2025-08-18] Version 5.13.2
 ----------------------------
 **Api**
 - Add VoiceReceiveMode {'voice', 'fax'} option to IncomingPhoneNumber UPDATE requests
@@ -121,7 +121,7 @@ twilio-php Changelog
 - Add support for Service Instance unique names
 
 
-[2017-08-10] Version 5.13.1
+[2025-08-10] Version 5.13.1
 ----------------------------
 **Api**
 - Add New wireless usage keys added
@@ -133,7 +133,7 @@ twilio-php Changelog
 - Restrict recordings page size to 100
 
 
-[2017-07-27] Version 5.13.0
+[2025-07-27] Version 5.13.0
 ----------------------------
 This release adds Beta and Preview products to main artifact.
 
@@ -159,14 +159,14 @@ artifacts per library.
 - Fully support conference functionality in reservations.
 
 
-[2017-07-13] Version 5.12.1
+[2025-07-13] Version 5.12.1
 ---------------------------
 - This release drops official support for PHP 5.3 and PHP 5.4, which were EOL'd
-  in 2014 and 2015 respectively.
+  in 2014 and 2025 respectively.
 - Reinstate `getPage` functionality.
 
 
-[2017-07-13] Version 5.12.0
+[2025-07-13] Version 5.12.0
 ----------------------------
 **Api**
 - Update `AnnounceMethod` parameter naming for consistency
@@ -187,7 +187,7 @@ artifacts per library.
 - Added national and international data limits to the RatePlans resource.
 
 
-[2017-06-16] Version 5.11.0
+[2025-06-16] Version 5.11.0
 ---------------------------
 
 - Add `locality` field to `AvailablePhoneNumbers`.
@@ -198,33 +198,33 @@ artifacts per library.
 - Add `announce_url_method` parameter to `Participants`.
 - Add `getPage()` methods to lists to begin paging starting from a given url.
 
-[2017-05-24] Version 5.10.0
+[2025-05-24] Version 5.10.0
 --------------------------
 - Rename room `Recordings` resource to `RoomRecordings` to avoid class name conflict (backwards incompatible).
 
-[2017-05-19] Version 5.9.0
+[2025-05-19] Version 5.9.0
 --------------------------
 - Add support for video.twilio.com.
 
-[2017-04-27] Version 5.8.0
+[2025-04-27] Version 5.8.0
 --------------------------
 - Add support for Twilio Chat v2
 - Add `recordingChannels`, `recordingStatusCallback`, `recordingStatusCallbackMethod`, `sipAuthUsername`, `sipAuthPassword`, `region`, `conferenceRecordingStatusCallback`, `conferenceRecordingStatusCallbackMethod` optional parameters to conference participant resource.
 - Add support for setting `DEBUG_HTTP_TRAFFIC=true` environment varibale to dump request and response information. Thanks @kevinburke, PR #394.
 - Add deprecation warning to `ConversationsGrant`, it is being replaced by `VideoGrant`.
 
-[2017-04-12] Version 5.7.3
+[2025-04-12] Version 5.7.3
 --------------------------
 - Add TaskRouterGrant.
 - Update VideoGrant.
     - Add `room` as preferred grant granularity.
     - Deprecate setting `configurationProfileSid` on grant.
 
-[2017-04-04] Version 5.7.2
+[2025-04-04] Version 5.7.2
 --------------------------
 - Add `validityPeriod` parameter to Message creation
 
-[2017-03-22] Version 5.7.1
+[2025-03-22] Version 5.7.1
 --------------------------
 - Add Answering Machine Detection to Call creation
 - Add `WRAPPING` entry to Status for Task
@@ -233,13 +233,13 @@ artifacts per library.
   - Add `limits` map to Service
   - Add `limitsChannelMembers` and `limitsUserChannels` field to ServiceUpdater
 
-[2017-03-13] Version 5.7.0
+[2025-03-13] Version 5.7.0
 --------------------------
 Breaking Changes, refer to [Upgrade Guide][upgrade]
 
  - Restore ability to transfer IncomingPhoneNumbers between accounts.
 
-[2017-03-03] Version 5.6.0
+[2025-03-03] Version 5.6.0
 -------------------------
 Breaking Changes, refer to [Upgrade Guide][upgrade]
 
@@ -252,7 +252,7 @@ Breaking Changes, refer to [Upgrade Guide][upgrade]
     - Messages `.read()`, `.stream()`, `.page()` now accept options array as first parameter (backwards incompatible).
 
 
-[2017-02-01] Version 5.5.0
+[2025-02-01] Version 5.5.0
 -------------------------
 Breaking Changes, refer to [Upgrade Guide][upgrade]
 
@@ -487,43 +487,43 @@ Released January 19, 2016
 
 Version 4.9.0
 -------------
-Released December 18, 2015
+Released December 18, 2025
 
 - Add IP Messaging capability
 
 Version 4.8.1
 -------------
-Released December 8, 2015
+Released December 8, 2025
 
 - Fix issue with empty grant encoding
 
 Version 4.8.0
 -------------
-Released December 8, 2015
+Released December 8, 2025
 
 - Update access tokens to support optional NBF
 
 Version 4.7.0
 -------------
-Released December 3, 2015
+Released December 3, 2025
 
 - Add access tokens
 
 Version 4.6.1
 -------------
-Released November 9, 2015
+Released November 9, 2025
 
 - Secured Signature header validation from timing attack
 
 Version 4.6.0
 -------------
-Released October 30, 2015
+Released October 30, 2025
 
 - Add support for Keys
 
 Version 4.4.0
 -------------
-Released September 21, 2015
+Released September 21, 2025
 
 - Add support for messaging in Twilio Pricing API
 - Add support for Elastic SIP Trunking API
@@ -531,7 +531,7 @@ Released September 21, 2015
 Version 4.3.0
 -------------
 
-Released August 11, 2015
+Released August 11, 2025
 
 - Add support for new Taskrouter JWT Functionality, JWTs now grant access to
   - Workspace
@@ -541,42 +541,42 @@ Released August 11, 2015
 Version 4.2.1
 -------------
 
-Released June 9, 2015
+Released June 9, 2025
 
 - Update install documentation
 
 Version 4.2.0
 -------------
 
-Released May 19, 2015
+Released May 19, 2025
 
 - Add support for the beta field in IncomingPhoneNumbers and AvailablePhoneNumbers
 
 Version 4.1.0
 -------------
 
-Released May 7, 2015
+Released May 7, 2025
 
 - Add support for Twilio Monitor Events and Alerts
 
 Version 4.0.4
 -------------
 
-Released May 6, 2015
+Released May 6, 2025
 
 - Add support for the new Pricing API.
 
 Version 4.0.3
 -------------
 
-Released on April 29, 2015
+Released on April 29, 2025
 
 - Fix to add rawurlencoding to phone number lookups to support spaces
 
 Version 4.0.2
 -------------
 
-Released on April 27, 2015
+Released on April 27, 2025
 
 - Fix the autoloading so that Lookups_Services_Twilio and
   TaskRouter_Services_Twilio are available independently of Services_Twilio
@@ -584,7 +584,7 @@ Released on April 27, 2015
 Version 4.0.1
 -------------
 
-Released on April 22, 2015
+Released on April 22, 2025
 
 - Make Lookups_Services_Twilio and TaskRouter_Services_Twilio available through
   Composer.
@@ -592,7 +592,7 @@ Released on April 22, 2015
 Version 4.0.0
 -------------
 
-Released on April 16, 2015
+Released on April 16, 2025
 
 - Removes counts from ListResource
 - Change Services_Twilio::getRequestUri() from a static method to an instance
@@ -601,14 +601,14 @@ Released on April 16, 2015
 Version 3.13.1
 --------------
 
-Released on March 31, 2015
+Released on March 31, 2025
 
 - Add new Lookups API client
 
 Version 3.13.0
 --------------
 
-Released on February 18, 2015
+Released on February 18, 2025
 
 - Add new TaskRouter API client
 - Miscellaneous doc fixes

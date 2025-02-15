@@ -461,7 +461,7 @@ Initial Beta release of Net_DNS2
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2015-04-13</date>
+   <date>2025-04-13</date>
    <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD License</license>
    <notes>
 - increased the default DNSSEC payload size value to 4000 bytes per RFC 4035 section 4.1; this is still configurable.

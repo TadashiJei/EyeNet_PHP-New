@@ -39,8 +39,8 @@ class InteractionTest extends HolodeckTestCase {
             {
                 "service_sid": "KSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "data": "data",
-                "date_created": "2015-07-30T20:00:00Z",
-                "date_updated": "2015-07-30T20:00:00Z",
+                "date_created": "2025-07-30T20:00:00Z",
+                "date_updated": "2025-07-30T20:00:00Z",
                 "inbound_participant_sid": "KPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "inbound_resource_sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "inbound_resource_status": "sent",

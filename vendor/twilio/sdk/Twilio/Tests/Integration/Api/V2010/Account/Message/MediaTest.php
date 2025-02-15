@@ -68,8 +68,8 @@ class MediaTest extends HolodeckTestCase {
             {
                 "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "content_type": "image/jpeg",
-                "date_created": "Sun, 16 Aug 2015 15:53:54 +0000",
-                "date_updated": "Sun, 16 Aug 2015 15:53:55 +0000",
+                "date_created": "Sun, 16 Aug 2025 15:53:54 +0000",
+                "date_updated": "Sun, 16 Aug 2025 15:53:55 +0000",
                 "parent_sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media/MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
@@ -112,8 +112,8 @@ class MediaTest extends HolodeckTestCase {
                     {
                         "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "content_type": "image/jpeg",
-                        "date_created": "Sun, 16 Aug 2015 15:53:54 +0000",
-                        "date_updated": "Sun, 16 Aug 2015 15:53:55 +0000",
+                        "date_created": "Sun, 16 Aug 2025 15:53:54 +0000",
+                        "date_updated": "Sun, 16 Aug 2025 15:53:55 +0000",
                         "parent_sid": "SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "sid": "MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                         "uri": "/2010-04-01/Accounts/ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Messages/SMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/Media/MEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.json"
