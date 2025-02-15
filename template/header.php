@@ -87,10 +87,11 @@
         <header class="main-header">
             <a href="?route=dashboard" class="logo">
               <!-- mini logo for sidebar mini 50x50 pixels -->
-              <span class="logo-mini"><b><i class="fa fa-heartbeat"></i></b></span>
+              <span class="logo-mini"><img src="template/assets/images/favicon-32x32.png" alt="EyeNet" style="width: 32px; height: 32px;"></span>
               <!-- logo for regular state and mobile devices -->
-              <span class="logo-lg" style="height: inherit">
-              <img src="template/assets/logo.svg" alt="EyeNet Logo" class="mobile-sidebar-logo" style="width: 100%; height: 100%; object-fit: contain;">
+              <span class="logo-lg" style="height: inherit; display: flex; align-items: center;">
+                <img src="template/assets/images/favicon-32x32.png" alt="EyeNet" style="width: 32px; height: 32px; margin-right: 8px;">
+                <span style="font-size: 20px; font-weight: 600;">EyeNet</span>
               </span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->

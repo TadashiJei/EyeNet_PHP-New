@@ -218,7 +218,22 @@ class MLIntegration {
     private function predictMetric($metric, $historicalData) {
         $values = array_map(function($record) use ($metric) {
             $metrics = json_decode($record['metrics'], true);
-            return isset($metrics[$metric]) ? $metrics[$metric] : null;
+            if (!isset($metrics[$metric])) return null;
+            
+            // Handle different metric types
+            switch($metric) {
+                case 'cpu':
+                    return $metrics[$metric];
+                case 'memory':
+                    return $metrics[$metric]['usage_percent'];
+                case 'disk':
+                    return $metrics[$metric][0]['usage_percent'];
+                case 'network':
+                    $interface = array_key_first($metrics[$metric]);
+                    return $metrics[$metric][$interface]['rx_bytes'];
+                default:
+                    return null;
+            }
         }, $historicalData);
         
         // Calculate moving average
@@ -236,13 +251,14 @@ class MLIntegration {
             $slope = $lastTwo[1] - $lastTwo[0];
             $prediction = end($movingAvg) + $slope;
         } else {
-            $prediction = end($values);
+            $prediction = is_numeric(end($values)) ? end($values) : 0;
         }
         
+        $lastValue = is_numeric(end($values)) ? end($values) : 0;
         return [
-            'current' => end($values),
+            'current' => $lastValue,
             'predicted' => $prediction,
-            'trend' => $this->calculateTrend($values)
+            'trend' => $this->calculateTrend(array_filter($values, 'is_numeric'))
         ];
     }
 
@@ -250,9 +266,18 @@ class MLIntegration {
      * Calculate trend direction
      */
     private function calculateTrend($values) {
+        if (count($values) < 6) return 'insufficient_data';
+        
         $recentValues = array_slice($values, -6); // Last 30 minutes
-        $firstAvg = array_sum(array_slice($recentValues, 0, 3)) / 3;
-        $lastAvg = array_sum(array_slice($recentValues, -3)) / 3;
+        if (empty($recentValues)) return 'insufficient_data';
+        
+        $firstThree = array_slice($recentValues, 0, 3);
+        $lastThree = array_slice($recentValues, -3);
+        
+        if (empty($firstThree) || empty($lastThree)) return 'insufficient_data';
+        
+        $firstAvg = array_sum($firstThree) / count($firstThree);
+        $lastAvg = array_sum($lastThree) / count($lastThree);
         
         if ($lastAvg > $firstAvg * 1.1) return 'increasing';
         if ($lastAvg < $firstAvg * 0.9) return 'decreasing';
@@ -273,10 +298,15 @@ class MLIntegration {
             }, $historicalData);
             
             // Calculate mean and standard deviation
-            $mean = array_sum($values) / count($values);
+            if (empty($values)) continue;
+            
+            $filteredValues = array_filter($values, function($v) { return !is_null($v); });
+            if (empty($filteredValues)) continue;
+            
+            $mean = array_sum($filteredValues) / count($filteredValues);
             $variance = array_sum(array_map(function($x) use ($mean) {
                 return pow($x - $mean, 2);
-            }, $values)) / count($values);
+            }, $filteredValues)) / count($filteredValues);
             $stdDev = sqrt($variance);
             
             // Check last value for anomaly
@@ -292,8 +322,6 @@ class MLIntegration {
         
         return $anomalies;
     }
-}
-
     /**
      * Get model performance metrics
      * @return array Performance metrics

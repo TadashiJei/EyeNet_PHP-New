@@ -31,6 +31,7 @@
                 <select class="form-control select2 select2-hidden-accessible" id="type" name="type" style="width: 100%;" tabindex="-1" aria-hidden="true">
                     <option value='linux'><?php _e('Linux'); ?></option>
                     <option value='windows'><?php _e('Windows'); ?> <?php _e('(BETA)'); ?></option>
+                    <option value='macos'><?php _e('macOS'); ?></option>
                 </select>
             </div>
         </div>

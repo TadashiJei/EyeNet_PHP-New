@@ -317,8 +317,26 @@ class Server extends App {
 
     public static function quickStats($data, $platform="linux") {
         $qstats = array();
+        
+        // Get macOS specific metrics if available
+        if($platform == "macos" && class_exists('MacOSMonitor')) {
+            $macMetrics = MacOSMonitor::getSpecificMetrics($data);
+            if(!empty($macMetrics)) {
+                $qstats['macos'] = $macMetrics;
+                
+                // Add battery status to main stats if available
+                if(isset($macMetrics['power']['battery_percentage'])) {
+                    $qstats['battery'] = $macMetrics['power']['battery_percentage'];
+                }
+                
+                // Add CPU temperature if available
+                if(isset($macMetrics['thermal']['cpu_temperature'])) {
+                    $qstats['cpu_temp'] = $macMetrics['thermal']['cpu_temperature'];
+                }
+            }
+        }
 
-        if($platform == "linux") {
+        if($platform == "linux" || $platform == "macos") {
             // disk usage
             $disktotal = 0; $diskused = 0;
             $disks_data = explode(";", Server::extractData('disks', $data, true)); array_pop($disks_data); // delete last
@@ -587,7 +605,13 @@ class Server extends App {
             $alerts = getTableFiltered("app_servers_alerts","serverid",$server['id'],"status",1);
             $incidents = getTableFiltered("app_servers_incidents","serverid",$server['id'],"status[!]",1);
 
-            if($server['type'] == 'linux') {
+            // Get platform-specific thresholds
+            $thresholds = [];
+            if($server['type'] == 'macos' && class_exists('MacOSMonitor')) {
+                $thresholds = MacOSMonitor::getThresholds();
+            }
+
+            if($server['type'] == 'linux' || $server['type'] == 'macos') {
                 foreach ($alerts as $alert) {
                     $occured = 0;
 

@@ -181,6 +181,37 @@ switch($_GET['json']) {
                 $results["data"][$i][9] = formatBytes($qstats['totalin']) . __('/s') . ' <i class="fa fa-long-arrow-down"></i><br>';
                 $results["data"][$i][9] .= formatBytes($qstats['totalout']) . __('/s') . ' <i class="fa fa-long-arrow-up"></i>';
 
+                // Add macOS specific columns if available
+                if($item['type'] == "macos" && isset($qstats['macos'])) {
+                    // Battery Status
+                    if(isset($qstats['macos']['power']['battery_percentage'])) {
+                        $battery = $qstats['macos']['power']['battery_percentage'];
+                        $batteryHealth = isset($qstats['macos']['power']['battery_health']) ? $qstats['macos']['power']['battery_health'] : '';
+                        $batteryClass = $battery > 50 ? 'text-green' : ($battery > 20 ? 'text-yellow' : 'text-red');
+                        $results["data"][$i][12] = '
+                            <span data-toggle="tooltip" title="' . $batteryHealth . '">
+                                <i class="fa fa-battery-' . floor($battery/25) . ' ' . $batteryClass . '"></i> ' . $battery . '%
+                            </span>';
+                    } else {
+                        $results["data"][$i][12] = '-';
+                    }
+
+                    // CPU Temperature
+                    if(isset($qstats['macos']['thermal']['cpu_temperature'])) {
+                        $temp = $qstats['macos']['thermal']['cpu_temperature'];
+                        $tempClass = $temp < 70 ? 'text-green' : ($temp < 85 ? 'text-yellow' : 'text-red');
+                        $results["data"][$i][13] = '
+                            <span class="' . $tempClass . '" data-toggle="tooltip" title="' . __('CPU Temperature') . '">
+                                <i class="fa fa-thermometer-half"></i> ' . $temp . '°C
+                            </span>';
+                    } else {
+                        $results["data"][$i][13] = '-';
+                    }
+                } else {
+                    $results["data"][$i][12] = '';
+                    $results["data"][$i][13] = '';
+                }
+
 
                 // UPTIME DONUTS
                 $results["data"][$i][10] = '
