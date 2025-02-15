@@ -192,3 +192,12 @@ td .btn-group {
 .callout.callout-ok h4 {
     margin-bottom: 3px;
 }
+
+.query-active .main-sidebar {
+    width: 120px !important;
+}
+.query-active .content-wrapper,
+.query-active .main-footer,
+.query-active .right-side {
+    margin-left: 120px !important;
+}

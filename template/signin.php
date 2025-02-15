@@ -77,6 +77,40 @@
             .auth-footer a:hover {
                 text-decoration: underline;
             }
+
+            /* New Material Design Styles */
+            .md-input-group {
+                position: relative;
+                margin-bottom: 1.5rem;
+            }
+            .md-input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding: 8px 0;
+                font-size: 1rem;
+                background: transparent;
+                transition: border-color 0.3s;
+            }
+            .md-input:focus {
+                outline: none;
+                border-bottom: 2px solid #3f51b5;
+            }
+            .md-label {
+                position: absolute;
+                left: 0;
+                top: 10px;
+                font-size: 1rem;
+                color: #aaa;
+                pointer-events: none;
+                transition: all 0.2s ease-out;
+            }
+            .md-input:focus + .md-label,
+            .md-input:not(:placeholder-shown) + .md-label {
+                top: -10px;
+                font-size: 0.85rem;
+                color: #3f51b5;
+            }
         </style>
     </head>
     <body class="auth-page">
@@ -96,14 +130,16 @@
                 <?php endif; ?>
 
                 <form action="?route=signin" method="post">
-                    <div class="form-floating mb-3">
-                        <input type="email" name="email" class="form-control" id="emailInput" placeholder="name@example.com" required autofocus>
-                        <label for="emailInput"><i class="fas fa-envelope me-2"></i><?php _e('Email address'); ?></label>
+                    <!-- Email Field with Material Design -->
+                    <div class="md-input-group mb-3">
+                        <input type="email" name="email" class="md-input" id="emailInput" placeholder=" " required autofocus>
+                        <label for="emailInput" class="md-label"><i class="fas fa-envelope me-2"></i><?php _e('Email address'); ?></label>
                     </div>
 
-                    <div class="form-floating mb-4">
-                        <input type="password" name="password" class="form-control" id="passwordInput" placeholder="Enter password" required>
-                        <label for="passwordInput"><i class="fas fa-lock me-2"></i><?php _e('Password'); ?></label>
+                    <!-- Password Field with Material Design -->
+                    <div class="md-input-group mb-4">
+                        <input type="password" name="password" class="md-input" id="passwordInput" placeholder=" " required>
+                        <label for="passwordInput" class="md-label"><i class="fas fa-lock me-2"></i><?php _e('Password'); ?></label>
                     </div>
 
                     <div class="d-grid">

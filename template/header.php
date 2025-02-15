@@ -81,7 +81,7 @@
         <script src="template/assets/plugins/datatables/datatables.min.js"></script>
 
     </head>
-    <body class="hold-transition <?php echo $liu['theme']; ?> <?php echo $liu['layout']; ?> <?php if($liu['sidebar']=="collapsed") echo "sidebar-collapse"; ?> sidebar-mini">
+    <body class="hold-transition <?php echo $liu['theme']; ?> <?php echo $liu['layout']; ?> <?php if($liu['sidebar']=="collapsed") echo "sidebar-collapse"; ?> sidebar-mini<?php if(isset($_GET['query_active'])) echo ' query-active'; ?>">
 		<div class="wrapper">
         <!-- header logo: style can be found in header.less -->
         <header class="main-header">
@@ -89,12 +89,14 @@
               <!-- mini logo for sidebar mini 50x50 pixels -->
               <span class="logo-mini"><b><i class="fa fa-heartbeat"></i></b></span>
               <!-- logo for regular state and mobile devices -->
-              <span class="logo-lg"><?php echo getConfigValue("app_name"); ?></span>
+              <span class="logo-lg" style="height: inherit">
+              <img src="template/assets/logo.svg" alt="EyeNet Logo" class="mobile-sidebar-logo" style="width: 100%; height: 100%; object-fit: contain;">
+              </span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top" role="navigation" style="height: 100%">
               <!-- Sidebar toggle button-->
-              <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+              <a href="#" class="sidebar-toggle visible-xs" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
               </a>
 
@@ -382,28 +384,15 @@
         </header>
 
         <aside class="main-sidebar">
-          <!-- Sidebar Header with Logo and User Panel -->
-          <div class="sidebar-header">
-              <a href="?route=dashboard">
-                  <img src="template/assets/logo.svg" alt="EyeNet Logo" class="sidebar-logo">
-              </a>
-          </div>
           
           <!-- User Panel -->
-          <div class="user-panel">
+          <div class="user-panel" style="display: flex; flex-direction: column;">
               <div class="image">
                   <img src="<?php echo getGravatar($liu['email'], 45); ?>" alt="User Image">
               </div>
               <div class="info">
                   <p><?php echo $liu['name']; ?></p>
                   <small><span class="status-indicator"></span> <?php _e('Online'); ?></small>
-              </div>
-          </div>
-          
-          <!-- Sidebar Search -->
-          <div class="sidebar-search">
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="<?php _e('Search...'); ?>">
               </div>
           </div>
           
@@ -422,7 +411,6 @@
               <?php } ?>
               <!-- Main Navigation -->
               <ul class="sidebar-menu" data-widget="tree">
-                <li class="menu-header"><?php _e('MAIN NAVIGATION'); ?></li>
 
                 <li <?php if(strpos($route,'dashboard') !== false) echo 'class="active"'; ?>>
                     <a href="?route=dashboard" class="nav-link">

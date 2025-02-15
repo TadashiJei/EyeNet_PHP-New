@@ -100,7 +100,7 @@ if (!empty($missing_fields)) {
             "email" => $email,
             "password" => $password,
             "groups" => 'a:1:{i:0;s:1:"0";}',
-            "theme" => "skin-green",
+            "theme" => "skin-dark",
             "sidebar" => "opened",
             "layout" => "",
             "notes" => "",

@@ -17,7 +17,7 @@ class User extends App {
     		"email" => $email,
     		"password" => $password,
             "groups" => serialize($data['groups']),
-    		"theme" => "skin-green",
+    		"theme" => "skin-dark",
     		"sidebar" => "opened",
     		"layout" => "",
     		"notes" => "",
