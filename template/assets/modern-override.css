@@ -1,0 +1,211 @@
+/* Modern Override Styles for EyeNet */
+
+:root {
+    --primary-color: #00a65a;
+    --secondary-color: #2c3e50;
+    --background-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #2c3e50;
+    --text-secondary: #6c757d;
+    --border-color: #e9ecef;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header & Navigation */
+.main-header {
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.main-header .logo {
+    background: var(--primary-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.main-header .logo:hover {
+    background: var(--primary-color);
+    opacity: 0.9;
+}
+
+/* Sidebar */
+.main-sidebar {
+    background: var(--secondary-color);
+    padding-top: 60px;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.08);
+}
+
+.sidebar-menu > li > a {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 4px 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu > li.active > a,
+.sidebar-menu > li > a:hover {
+    background: rgba(255,255,255,0.1);
+    color: var(--primary-color);
+}
+
+/* Dashboard Cards */
+.small-box {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.small-box:hover {
+    transform: translateY(-3px);
+}
+
+/* Stats Overview */
+.info-box {
+    border-radius: 10px;
+    background: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.info-box-content {
+    padding: 20px;
+}
+
+/* Tables */
+.table-responsive {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table > thead > tr > th {
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--primary-color);
+    opacity: 0.9;
+}
+
+/* Alerts and Notifications */
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: none;
+    padding: 0;
+}
+
+/* Search Bar */
+.sidebar-form {
+    border-radius: 8px;
+    margin: 10px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar-form input[type="text"] {
+    background: transparent;
+    color: #fff;
+}
+
+/* Status Indicators */
+.label {
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 500;
+}
+
+/* World Map Container */
+.world-map-container {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* Overview Panels */
+.overview-panel {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.overview-panel .panel-heading {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Status Icons */
+.status-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.status-icon.success {
+    background: var(--success-color);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-header .logo {
+        width: 50px;
+        overflow: hidden;
+    }
+    
+    .main-sidebar {
+        padding-top: 50px;
+    }
+    
+    .sidebar-menu > li > a {
+        padding: 10px;
+        margin: 2px 5px;
+    }
+}

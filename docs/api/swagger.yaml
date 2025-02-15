@@ -1,0 +1,243 @@
+openapi: 3.0.0
+info:
+  title: EyeNet API
+  description: API documentation for EyeNet Network Management System
+  version: 1.0.0
+  contact:
+    email: admin@eyenet.local
+
+servers:
+  - url: http://localhost/api/v1
+    description: Development server
+  - url: https://api.eyenet.local/v1
+    description: Production server
+
+tags:
+  - name: ML
+    description: Machine Learning Model Endpoints
+  - name: Analytics
+    description: Predictive Analytics Endpoints
+  - name: Network
+    description: Network Management Endpoints
+  - name: Monitoring
+    description: Network Monitoring Endpoints
+  - name: Admin
+    description: Administrative Endpoints
+
+paths:
+  /ml/predict:
+    post:
+      tags:
+        - ML
+      summary: Get predictions from ML model
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PredictionRequest'
+      responses:
+        '200':
+          description: Successful prediction
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PredictionResponse'
+        '400':
+          description: Invalid input
+        '500':
+          description: Model error
+
+  /analytics/forecast:
+    get:
+      tags:
+        - Analytics
+      summary: Get bandwidth usage forecast
+      parameters:
+        - name: department_id
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: timeframe
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [hour, day, week, month]
+      responses:
+        '200':
+          description: Forecast data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ForecastResponse'
+
+  /network/usage:
+    get:
+      tags:
+        - Network
+      summary: Get current network usage
+      parameters:
+        - name: ip_address
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: department_id
+          in: query
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Network usage data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NetworkUsage'
+
+  /monitoring/status:
+    get:
+      tags:
+        - Monitoring
+      summary: Get network monitoring status
+      responses:
+        '200':
+          description: Current monitoring status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MonitoringStatus'
+
+  /admin/departments:
+    get:
+      tags:
+        - Admin
+      summary: Get all departments
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: List of departments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Department'
+
+components:
+  schemas:
+    PredictionRequest:
+      type: object
+      required:
+        - network_data
+      properties:
+        network_data:
+          type: object
+          properties:
+            traffic_patterns:
+              type: array
+              items:
+                type: number
+            bandwidth_usage:
+              type: number
+            active_users:
+              type: integer
+            time_of_day:
+              type: string
+            day_of_week:
+              type: integer
+
+    PredictionResponse:
+      type: object
+      properties:
+        bandwidth_forecast:
+          type: number
+        anomaly_score:
+          type: number
+        recommended_actions:
+          type: array
+          items:
+            type: string
+
+    ForecastResponse:
+      type: object
+      properties:
+        timeframe:
+          type: string
+        predictions:
+          type: array
+          items:
+            type: object
+            properties:
+              timestamp:
+                type: string
+                format: date-time
+              value:
+                type: number
+
+    NetworkUsage:
+      type: object
+      properties:
+        current_bandwidth:
+          type: number
+        peak_usage:
+          type: number
+        active_connections:
+          type: integer
+        applications:
+          type: array
+          items:
+            $ref: '#/components/schemas/ApplicationUsage'
+
+    ApplicationUsage:
+      type: object
+      properties:
+        name:
+          type: string
+        bandwidth:
+          type: number
+        connections:
+          type: integer
+
+    MonitoringStatus:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [active, inactive, error]
+        last_update:
+          type: string
+          format: date-time
+        metrics:
+          type: object
+          properties:
+            cpu_usage:
+              type: number
+            memory_usage:
+              type: number
+            network_load:
+              type: number
+
+    Department:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        bandwidth_limit:
+          type: number
+        active_users:
+          type: integer
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - BearerAuth: []

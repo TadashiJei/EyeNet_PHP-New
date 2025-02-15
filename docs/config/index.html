@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Guide - EyeNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="/dashboard/docs/assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/dashboard/docs">
+                <img src="/dashboard/docs/assets/images/EyeNet-Light-Mode.svg" alt="EyeNet" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard/docs">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dashboard/docs/config">Configuration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="nav flex-column nav-pills sticky-top" style="top: 80px;">
+                    <a class="nav-link active" href="#system-requirements">System Requirements</a>
+                    <a class="nav-link" href="#environment">Environment Setup</a>
+                    <a class="nav-link" href="#network-config">Network Configuration</a>
+                    <a class="nav-link" href="#security">Security Settings</a>
+                    <a class="nav-link" href="#monitoring">Monitoring Setup</a>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <div class="glass-card p-4 mb-4">
+                    <h1 class="mb-4">Configuration Guide</h1>
+                    <p class="lead">Complete system configuration and setup guide for EyeNet</p>
+                </div>
+
+                <section id="system-requirements" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>System Requirements</h2>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Minimum Requirements</h5>
+                                    <ul class="list-unstyled">
+                                        <li>✓ PHP 8.0+</li>
+                                        <li>✓ MySQL 8.0+</li>
+                                        <li>✓ 4GB RAM</li>
+                                        <li>✓ 2 CPU Cores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recommended</h5>
+                                    <ul class="list-unstyled">
+                                        <li>✓ PHP 8.2+</li>
+                                        <li>✓ MySQL 8.0+ with InnoDB</li>
+                                        <li>✓ 8GB RAM</li>
+                                        <li>✓ 4 CPU Cores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="environment" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Environment Setup</h2>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Environment Variables</h3>
+                    <div class="code-window">
+                        <pre><code># Database Configuration
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=eyenet
+DB_USERNAME=root
+DB_PASSWORD=secret
+
+# ML Service Configuration
+ML_SERVICE_URL=http://localhost:5000
+ML_API_KEY=your-api-key
+
+# Network Settings
+NETWORK_MONITOR_INTERVAL=60
+BANDWIDTH_ALERT_THRESHOLD=0.9
+
+# Security
+JWT_SECRET=your-jwt-secret
+API_RATE_LIMIT=60</code></pre>
+                    </div>
+                </section>
+
+                <section id="network-config" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Network Configuration</h2>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Bandwidth Management</h3>
+                    <div class="code-window">
+                        <pre><code>{
+    "departments": {
+        "engineering": {
+            "bandwidth_limit": "100Mbps",
+            "burst_limit": "150Mbps",
+            "priority": "high"
+        },
+        "marketing": {
+            "bandwidth_limit": "50Mbps",
+            "burst_limit": "75Mbps",
+            "priority": "medium"
+        }
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section id="security" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Security Settings</h2>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Authentication</h3>
+                    <div class="code-window">
+                        <pre><code>{
+    "auth": {
+        "jwt_lifetime": 3600,
+        "refresh_token_lifetime": 604800,
+        "password_policy": {
+            "min_length": 12,
+            "require_special": true,
+            "require_numbers": true
+        }
+    }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section id="monitoring" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Monitoring Setup</h2>
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+
+                    <h3>Alert Configuration</h3>
+                    <div class="code-window">
+                        <pre><code>{
+    "alerts": {
+        "bandwidth": {
+            "warning_threshold": 0.8,
+            "critical_threshold": 0.95,
+            "notification_channels": ["email", "slack"]
+        },
+        "uptime": {
+            "warning_threshold": 0.95,
+            "critical_threshold": 0.9,
+            "check_interval": 60
+        }
+    }
+}</code></pre>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

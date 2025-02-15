@@ -1,0 +1,288 @@
+/* EyeNet Modern Theme
+ * Built to complement the EyeNet logo and security-focused design language
+ */
+
+:root {
+  --primary: #00a65a;
+  --primary-hover: #008d4c;
+  --secondary: #0088cc;
+  --secondary-dark: #003366;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-800: #343a40;
+  --dark-sidebar: #222d32;
+  --gradient-blue: linear-gradient(135deg, var(--primary), var(--secondary));
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --transition-base: all 0.3s ease;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ecf0f5;
+  color: var(--gray-800);
+}
+
+/* Header */
+.main-header {
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header .logo {
+  background-color: var(--primary) !important;
+  color: var(--white);
+  border-bottom: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header .navbar {
+  background-color: var(--white);
+}
+
+/* Sidebar */
+.main-sidebar {
+  background: var(--dark-sidebar);
+  padding-top: 60px;
+}
+
+.sidebar-menu {
+  margin-top: 20px;
+}
+
+.sidebar-menu > li > a {
+  padding: 15px;
+  color: #b8c7ce;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a {
+  color: var(--white);
+  background: rgba(255,255,255,0.1);
+  border-left-color: var(--primary);
+}
+
+.sidebar-menu .treeview-menu > li > a {
+  padding: 10px 15px 10px 35px;
+}
+
+/* Search Box */
+.sidebar-form {
+  border: none !important;
+  margin: 10px !important;
+}
+
+.sidebar-form input[type="text"] {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: var(--white);
+  border-radius: 4px 0 0 4px;
+}
+
+.sidebar-form .btn {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: #b8c7ce;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Dashboard Stats */
+.small-box {
+  border-radius: 8px;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.small-box > .inner {
+  padding: 20px;
+}
+
+.small-box h3 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.small-box p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.small-box .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 0;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.small-box > .small-box-footer {
+  position: relative;
+  text-align: center;
+  padding: 3px 0;
+  color: var(--white);
+  display: block;
+  background: rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+/* Dashboard Cards Colors */
+.bg-green {
+  background-color: var(--primary) !important;
+}
+
+.bg-aqua {
+  background-color: var(--secondary) !important;
+}
+
+.bg-yellow {
+  background-color: var(--warning) !important;
+}
+
+.bg-red {
+  background-color: var(--danger) !important;
+}
+
+/* Status Messages */
+.alert {
+  border-radius: 8px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success);
+}
+
+.alert-info {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: var(--info);
+}
+
+.alert-warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: var(--warning);
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger);
+}
+
+/* World Map Container */
+.box {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  background: var(--white);
+  border-top: 3px solid var(--secondary);
+}
+
+.box-header {
+  color: #444;
+  padding: 15px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.box-header .box-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.box-body {
+  padding: 15px;
+}
+
+/* Overview Sections */
+.overview-box {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--success);
+}
+
+.overview-box h3 {
+  margin-top: 0;
+  color: var(--gray-800);
+}
+
+/* Status Icons */
+.status-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-healthy {
+  background-color: var(--success);
+  box-shadow: 0 0 0 rgba(40, 167, 69, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .main-header .logo,
+  .main-header .navbar {
+    width: 100%;
+    float: none;
+  }
+  
+  .main-sidebar {
+    padding-top: 100px;
+  }
+  
+  .content-wrapper {
+    padding-top: 100px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-200);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-800);
+}

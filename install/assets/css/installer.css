@@ -1,0 +1,361 @@
+/* EyeNet Installer Modern Theme */
+:root {
+    --primary-blue: #0099FF;
+    --secondary-blue: #005999;
+    --accent-blue: #E6F5FF;
+    --dark-blue: #003366;
+    --white: #FFFFFF;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-800: #343A40;
+}
+
+body.login-page {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--secondary-blue) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    margin: 0;
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.login-logo b {
+    color: var(--primary-blue);
+}
+
+.login-box-body {
+    padding: 0;
+}
+
+.login-box-msg {
+    font-size: 1.25rem;
+    color: var(--gray-800);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid var(--primary-blue);
+    padding-bottom: 0.5rem;
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid var(--gray-200);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 153, 255, 0.25);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.btn {
+    height: 45px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 153, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 153, 255, 0.4);
+}
+
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-danger {
+    background-color: #FFE9E9;
+    color: #DC3545;
+    border-left: 4px solid #DC3545;
+}
+
+.alert-success {
+    background-color: #E9FFE9;
+    color: #28A745;
+    border-left: 4px solid #28A745;
+}
+
+.alert-warning {
+    background-color: #FFF9E9;
+    color: #FFC107;
+    border-left: 4px solid #FFC107;
+}
+
+.form-control-feedback {
+    height: 45px;
+    line-height: 45px;
+    color: var(--gray-300);
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-list li {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    background: var(--gray-100);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.requirements-list li i {
+    font-size: 1.1rem;
+}
+
+.requirements-list li i.fa-check {
+    color: #28A745;
+}
+
+.requirements-list li i.fa-times {
+    color: #DC3545;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.progress-indicator .step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-300);
+    font-size: 0.9rem;
+}
+
+.progress-indicator .step.active {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.progress-indicator .step.complete {
+    color: var(--secondary-blue);
+}
+
+.progress-indicator .step i {
+    font-size: 1.1rem;
+}
+
+/* Installation Progress */
+.installation-progress {
+    margin-bottom: 2rem;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    background-color: var(--gray-200);
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
+    transition: width 0.3s ease;
+}
+
+.status-messages {
+    margin-top: 1.5rem;
+}
+
+.status-message {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--gray-800);
+}
+
+.status-message i {
+    font-size: 1.1rem;
+}
+
+.status-message.current {
+    color: var(--primary-blue);
+}
+
+/* System Check Results */
+.check-list {
+    margin-top: 1.5rem;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--gray-100);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.check-item:hover {
+    transform: translateX(5px);
+}
+
+.check-item.success i {
+    color: #28A745;
+}
+
+.check-item.error i {
+    color: #DC3545;
+}
+
+.check-item.warning i {
+    color: #FFC107;
+}
+
+/* Version Info */
+.version-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--gray-100);
+    border-radius: 8px;
+}
+
+.version-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.version-item i {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+}
+
+.version-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.version-item strong {
+    font-size: 0.8rem;
+    color: var(--gray-800);
+}
+
+.version-item span {
+    font-size: 1rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 2rem;
+}
+
+.action-buttons .btn {
+    margin-bottom: 0.5rem;
+}
+
+/* Error Details */
+.error-details {
+    margin: 1.5rem 0;
+}
+
+.error-log {
+    background: var(--gray-100);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #DC3545;
+    white-space: pre-wrap;
+    margin-top: 0.5rem;
+}
+
+/* Installation Complete */
+.installation-complete {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.installation-complete .alert {
+    text-align: left;
+}
+
+.installation-complete .btn {
+    margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90% !important;
+        margin: 1rem;
+    }
+    
+    .row > div {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-indicator {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .version-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .version-item {
+        justify-content: center;
+    }
+}

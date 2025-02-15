@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Examples - EyeNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="/dashboard/docs/assets/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/dashboard/docs">
+                <img src="/dashboard/docs/assets/images/EyeNet-Light-Mode.svg" alt="EyeNet" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard/docs">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dashboard/docs/examples">Examples</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <nav class="nav flex-column nav-pills sticky-top" style="top: 80px;">
+                    <a class="nav-link active" href="#ml-integration">ML Integration</a>
+                    <a class="nav-link" href="#analytics">Analytics</a>
+                    <a class="nav-link" href="#network">Network Management</a>
+                    <a class="nav-link" href="#api-usage">API Usage</a>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <div class="glass-card p-4 mb-4">
+                    <h1 class="mb-4">Code Examples</h1>
+                    <p class="lead">Practical examples and use cases for EyeNet integration</p>
+                </div>
+
+                <section id="ml-integration" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>ML Integration Examples</h2>
+                    
+                    <h3>Basic Prediction</h3>
+                    <div class="code-window">
+                        <pre><code class="language-php"><?php
+// Initialize ML client
+$mlClient = new MLIntegration([
+    'endpoint' => 'http://localhost:5000',
+    'api_key' => getenv('ML_API_KEY')
+]);
+
+// Get prediction
+$prediction = $mlClient->getPredictions([
+    'network_data' => [
+        'traffic_patterns' => [0.5, 0.6, 0.8],
+        'bandwidth_usage' => 0.75,
+        'active_users' => 150
+    ]
+]);
+
+// Handle response
+if ($prediction['status'] === 'success') {
+    $bandwidth = $prediction['predictions']['bandwidth_forecast'];
+    $anomaly = $prediction['predictions']['anomaly_score'];
+    
+    // Take action based on predictions
+    if ($anomaly > 0.8) {
+        NotificationService::alert('High anomaly detected');
+    }
+}</code></pre>
+                    </div>
+
+                    <h3>Batch Processing</h3>
+                    <div class="code-window">
+                        <pre><code class="language-php"><?php
+// Process multiple predictions
+$batchData = [
+    ['timestamp' => '2025-02-01 10:00:00', 'usage' => 0.65],
+    ['timestamp' => '2025-02-01 11:00:00', 'usage' => 0.72],
+    ['timestamp' => '2025-02-01 12:00:00', 'usage' => 0.88]
+];
+
+$results = $mlClient->processBatch($batchData);</code></pre>
+                    </div>
+                </section>
+
+                <section id="analytics" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Analytics Examples</h2>
+                    
+                    <h3>Usage Analysis</h3>
+                    <div class="code-window">
+                        <pre><code class="language-php"><?php
+// Initialize analytics
+$analytics = new Analytics([
+    'timeframe' => '24h',
+    'granularity' => '1h'
+]);
+
+// Get department usage
+$usage = $analytics->getDepartmentUsage(
+    departmentId: 123,
+    startDate: '2025-02-01',
+    endDate: '2025-02-02'
+);
+
+// Generate report
+$report = $analytics->generateReport($usage);</code></pre>
+                    </div>
+                </section>
+
+                <section id="network" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>Network Management</h2>
+                    
+                    <h3>Bandwidth Control</h3>
+                    <div class="code-window">
+                        <pre><code class="language-php"><?php
+// Initialize network manager
+$network = new NetworkManager();
+
+// Set bandwidth limits
+$network->setBandwidthLimit(
+    departmentId: 123,
+    limit: '100Mbps',
+    burst: '150Mbps'
+);
+
+// Monitor usage
+$network->monitorBandwidth(function($usage) {
+    if ($usage > 0.9) {
+        // Implement throttling
+        $this->throttleBandwidth();
+    }
+});</code></pre>
+                    </div>
+                </section>
+
+                <section id="api-usage" class="glass-card p-4 mb-4 animate-fade-in">
+                    <h2>API Usage Examples</h2>
+                    
+                    <h3>REST API</h3>
+                    <div class="code-window">
+                        <pre><code class="language-javascript">// JavaScript API client
+const api = new EyeNetAPI({
+    baseUrl: 'http://api.eyenet.local',
+    apiKey: process.env.API_KEY
+});
+
+// Get network status
+const status = await api.getNetworkStatus();
+
+// Update configuration
+await api.updateConfig({
+    department_id: 123,
+    bandwidth_limit: '100Mbps'
+});</code></pre>
+                    </div>
+
+                    <h3>WebSocket Example</h3>
+                    <div class="code-window">
+                        <pre><code class="language-javascript">// Real-time monitoring
+const socket = new WebSocket('ws://api.eyenet.local/ws');
+
+socket.onmessage = (event) => {
+    const data = JSON.parse(event.data);
+    
+    if (data.type === 'bandwidth_alert') {
+        console.log('Bandwidth threshold exceeded:', data);
+        notifyAdmin(data);
+    }
+};</code></pre>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+</body>
+</html>

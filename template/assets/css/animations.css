@@ -1,0 +1,116 @@
+/* Modern Animations */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Apply Animations */
+.main-header {
+    animation: slideInDown 0.5s ease-out;
+}
+
+.sidebar-menu > li {
+    opacity: 0;
+    animation: slideInLeft 0.3s ease-out forwards;
+}
+
+.sidebar-menu > li:nth-child(1) { animation-delay: 0.1s; }
+.sidebar-menu > li:nth-child(2) { animation-delay: 0.2s; }
+.sidebar-menu > li:nth-child(3) { animation-delay: 0.3s; }
+.sidebar-menu > li:nth-child(4) { animation-delay: 0.4s; }
+.sidebar-menu > li:nth-child(5) { animation-delay: 0.5s; }
+
+.content-wrapper {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.box, .small-box, .info-box {
+    animation: scaleIn 0.3s ease-out;
+}
+
+/* Hover Animations */
+.btn:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+/* Notification Animation */
+@keyframes notification {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+.notification-counter {
+    animation: notification 2s infinite;
+}
+
+/* Loading Animation */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loading-indicator {
+    animation: rotate 1s linear infinite;
+}
+
+/* Page Transition */
+.page-transition {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Alert Animations */
+.alert {
+    animation: slideInDown 0.3s ease-out;
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+    animation: scaleIn 0.3s ease-out;
+}

@@ -1,0 +1,362 @@
+/* Modern Monitoring Page Styles */
+
+:root {
+    --primary: #2196F3;
+    --success: #4CAF50;
+    --warning: #FFC107;
+    --danger: #F44336;
+    --text-primary: #2C3E50;
+    --text-secondary: #718096;
+    --border: #E2E8F0;
+    --background: #F8FAFC;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+}
+
+/* Header Styles */
+.content-header {
+    padding: 40px 0 20px;
+    position: relative;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monitoring-logo {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.monitoring-logo:hover {
+    transform: scale(1.05);
+}
+
+.content-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Info Box Styles */
+.box,
+.box.box-default,
+.box.box-primary {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
+    margin-bottom: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.box-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-title i {
+    color: var(--primary);
+}
+
+.box-body {
+    padding: 20px;
+}
+
+/* Quick Stats Grid */
+.quick-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 24px;
+}
+
+.stat-icon.status-icon {
+    background: var(--success);
+}
+
+.stat-icon.warning-icon {
+    background: var(--warning);
+}
+
+.stat-icon.danger-icon {
+    background: var(--danger);
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-content h4 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.stat-content .stat-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Table Styles */
+.table.table-striped.table-hover.table-bordered,
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table.table-striped.table-hover.table-bordered > thead > tr > th,
+.table > thead > tr > th {
+    background: var(--background);
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    border: none;
+    border-bottom: 2px solid var(--border);
+}
+
+.table.table-striped.table-hover.table-bordered > tbody > tr > td,
+.table > tbody > tr > td {
+    padding: 16px;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.table.table-striped.table-hover.table-bordered > tbody > tr:hover,
+.table-hover > tbody > tr:hover {
+    background-color: var(--background);
+    transition: background-color 0.2s;
+}
+
+.table.table-striped.table-hover.table-bordered > tbody > tr:nth-child(odd),
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Add modern styling for table cells */
+.table td:first-child,
+.table th:first-child {
+    padding-left: 24px;
+}
+
+.table td:last-child,
+.table th:last-child {
+    padding-right: 24px;
+}
+
+/* Status column styling */
+.table td .status-indicator {
+    margin-right: 8px;
+}
+
+/* Group column styling */
+.table td .group-tag {
+    display: inline-flex;
+    padding: 4px 12px;
+    background: var(--background);
+    border-radius: 12px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Load time column styling */
+.table td .load-time {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    color: var(--text-secondary);
+}
+
+/* Last checked column styling */
+.table td .last-checked {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Uptime column styling */
+.table td .uptime-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 4px;
+}
+
+/* Status Indicators */
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.status-up {
+    background: var(--success);
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.1);
+}
+
+.status-warning {
+    background: var(--warning);
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.1);
+}
+
+.status-down {
+    background: var(--danger);
+    box-shadow: 0 0 0 4px rgba(244, 67, 54, 0.1);
+}
+
+/* Uptime Display */
+.uptime-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.uptime-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+}
+
+.uptime-dot.warning {
+    background: var(--warning);
+}
+
+.uptime-dot.danger {
+    background: var(--danger);
+}
+
+/* Group Tags */
+.group-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--background);
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Responsive Container */
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Footer Styles */
+.main-footer {
+    background: #fff;
+    padding: 20px 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+}
+
+/* Loading Time Display */
+.load-time {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* Last Checked Time */
+.last-checked {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.last-checked i {
+    margin-right: 4px;
+    color: var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-header {
+        padding: 20px 0;
+    }
+    
+    .content-header h1 {
+        font-size: 24px;
+    }
+    
+    .box-header {
+        padding: 16px;
+    }
+    
+    .box-body {
+        padding: 16px;
+    }
+    
+    .table > thead > tr > th,
+    .table > tbody > tr > td {
+        padding: 12px;
+    }
+}
