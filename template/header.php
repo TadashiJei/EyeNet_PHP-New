@@ -40,11 +40,55 @@
 		<link href="template/assets/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
         <!-- daterange picker -->
         <link href="template/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
-        <!-- summernote wysihtml5 - text editor -->
+           <!-- summernote wysihtml5 - text editor -->
 		<link href="template/assets/plugins/summernote/summernote.css" rel="stylesheet" type="text/css" />
 
-        <!-- jvectormap -->
-        <link rel="stylesheet" href="template/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+<!-- jvectormap -->
+<link rel="stylesheet" href="template/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+
+<!-- AdminLTE Theme style -->
+<link rel="stylesheet" href="template/assets/dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="template/assets/dist/css/skins/skin-blue.min.css">
+
+<!-- Custom CSS fixes -->
+<style>
+    .sidebar-toggle {
+        display: block !important;
+        color: #fff !important;
+        padding: 15px !important;
+        text-decoration: none !important;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        position: relative;
+        float: left;
+        background-color: transparent;
+        background-image: none;
+        border: none;
+    }
+    .sidebar-toggle:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .sidebar-toggle .sr-only {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .sidebar-mini.sidebar-collapse .main-sidebar {
+            transform: translate(0, 0);
+            width: 50px !important;
+            z-index: 850;
+        }
+        .sidebar-mini.sidebar-collapse .content-wrapper {
+            margin-left: 50px !important;
+        }
+    }
+    
+    /* Add hamburger icon */
+    .sidebar-toggle:before {
+        content: '\f0c9';
+        font-family: 'FontAwesome';
+        font-size: 16px;
+    }
+</style>  
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
         <!-- Modern Override CSS -->
@@ -97,7 +141,7 @@
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation" style="height: 100%">
               <!-- Sidebar toggle button-->
-              <a href="#" class="sidebar-toggle visible-xs" data-toggle="push-menu" role="button">
+              <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
               </a>
 

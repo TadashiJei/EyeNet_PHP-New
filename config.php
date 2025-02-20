@@ -1,0 +1,9 @@
+<?php $config = array(
+        "database_type"=>"mysql",
+        "database_name"=>"eyenetdb2",
+        "server"=>"localhost",
+        "username"=>"root",
+        "password"=>"",
+        "charset"=>"utf8",
+        "port"=>3306,
+        "encryption_key"=>"c31aa80cf1f2102b89530689894b2fbbb52ba93d6fd7f365dc00fee9e7303fa6" ); ?>

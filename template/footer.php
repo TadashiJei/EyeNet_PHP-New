@@ -1,4 +1,3 @@
-
 			  <footer class="main-footer no-print">
 					<div class="pull-right hidden-xs">
 					  <?php _e('All times are'); ?> <?php echo getConfigValue("timezone"); ?>.
@@ -58,7 +57,27 @@
 		<!-- peity -->
 		<script src='template/assets/plugins/peity/jquery.peity.min.js'></script>
 		<!-- AdminLTE App -->
-		<script src="template/assets/dist/js/app.min.js" type="text/javascript"></script>
+		<script src="template/assets/dist/js/adminlte.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// Remove any existing click handlers
+				$('.sidebar-toggle').off('click');
+				
+				// Add new click handler
+				$('.sidebar-toggle').on('click', function(e) {
+					e.preventDefault();
+					$('body').toggleClass('sidebar-collapse');
+					$('body').toggleClass('sidebar-open');
+				});
+				
+				// Fix sidebar height
+				$('.sidebar').slimScroll({
+					height: ($(window).height() - $('.main-header').height()) + 'px',
+					size: '3px'
+				});
+			});
+		</script>
 
 		<!-- jvectormap  -->
 		<script src="template/assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
