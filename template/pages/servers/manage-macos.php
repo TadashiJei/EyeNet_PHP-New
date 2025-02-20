@@ -72,52 +72,29 @@ $history = $database->select("app_servers_history", "*", [ "serverid" => $server
                         <li <?php if ($section == "incidents") echo 'class="active"'; ?> >
                             <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=incidents"><?php _e('Incidents'); ?></a>
                         </li>
-
-                        <div class="btn-group pull-right" style="padding:6px;">
-                            <?php if ($section == "alerting") { ?>
-                                <a data-toggle='tooltip' title='Add Alert' class="btn btn-primary btn-flat btn-sm" href="#" onClick='showM("?modal=serveralerts/add&reroute=servers/manage-macos&routeid=<?php echo $server['id']; ?>");return false'><i class="fa fa-plus"></i> ADD ALERT</a>
-                            <?php } ?>
-                            
-                            <button type="button" class="btn btn-default btn-flat btn-sm pull-right" id="daterange-btn">
-                                <i class="fa fa-calendar fa-fw"></i> <span><?php _e('Date Range'); ?></span> <i class="fa fa-caret-down fa-fw"></i>
-                            </button>
-                            
-                            <form role="form" method="post" enctype="multipart/form-data" id="rangeForm">
-                                <input type="hidden" name="action" value="setRange">
-                                <input type="hidden" name="range_start" id="range_start" value="">
-                                <input type="hidden" name="range_end" id="range_end" value="">
-                                <input type="hidden" name="range_label" id="range_label" value="">
-                                <input type="hidden" name="asset" value="server-<?php echo $_GET['id']; ?>">
-                                <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
-                                <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
-                                <input type="hidden" name="section" value="<?php if(!empty($_GET['section'])) echo $_GET['section']; ?>">
-                            </form>
-                        </div>
                     </ul>
 
-
-                            <li <?php if ($section == "power") echo 'class="active"'; ?>>
-                                <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=power"><?php _e('Power'); ?></a>
-                            </li>
-                            <li <?php if ($section == "thermal") echo 'class="active"'; ?>>
-                                <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=thermal"><?php _e('Thermal'); ?></a>
-                            </li>
-                            <li <?php if ($section == "security") echo 'class="active"'; ?>>
-                                <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=security"><?php _e('Security'); ?></a>
-                            </li>
-                            <li <?php if ($section == "alerting") echo 'class="active"'; ?>>
-                                <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=alerting"><?php _e('Alerting'); ?></a>
-                            </li>
-                            <li <?php if ($section == "incidents") echo 'class="active"'; ?>>
-                                <a href="?route=servers/manage-macos&id=<?php echo $server['id']; ?>&section=incidents"><?php _e('Incidents'); ?></a>
-                            </li>
-                        </ul>
-                        <?php if(in_array("editServer",$perms)) { ?>
-                            <div class="tab-button">
-                                <a data-toggle='tooltip' title='Add Alert' class="btn btn-primary btn-flat btn-sm" href="#" onClick='showM("?modal=serveralerts/add&reroute=servers/manage-macos&routeid=<?php echo $server['id']; ?>");return false'><i class="fa fa-plus"></i> ADD ALERT</a>
-                            </div>
+                    <div class="btn-group pull-right" style="padding:6px;">
+                        <?php if ($section == "alerting") { ?>
+                            <a data-toggle='tooltip' title='Add Alert' class="btn btn-primary btn-flat btn-sm" href="#" onClick='showM("?modal=serveralerts/add&reroute=servers/manage-macos&routeid=<?php echo $server['id']; ?>");return false'><i class="fa fa-plus"></i> ADD ALERT</a>
                         <?php } ?>
+                        
+                        <button type="button" class="btn btn-default btn-flat btn-sm pull-right" id="daterange-btn">
+                            <i class="fa fa-calendar fa-fw"></i> <span><?php _e('Date Range'); ?></span> <i class="fa fa-caret-down fa-fw"></i>
+                        </button>
+                        
+                        <form role="form" method="post" enctype="multipart/form-data" id="rangeForm">
+                            <input type="hidden" name="action" value="setRange">
+                            <input type="hidden" name="range_start" id="range_start" value="">
+                            <input type="hidden" name="range_end" id="range_end" value="">
+                            <input type="hidden" name="range_label" id="range_label" value="">
+                            <input type="hidden" name="asset" value="server-<?php echo $_GET['id']; ?>">
+                            <input type="hidden" name="route" value="<?php echo $_GET['route']; ?>">
+                            <input type="hidden" name="routeid" value="<?php echo $_GET['id']; ?>">
+                            <input type="hidden" name="section" value="<?php if(!empty($_GET['section'])) echo $_GET['section']; ?>">
+                        </form>
                     </div>
+
                     <div class="tab-content">
                         <!-- Overview Tab -->
                         <div class="tab-pane <?php if ($section == "" || $section == "overview") echo 'active'; ?>" id="overview">
@@ -511,8 +488,6 @@ $history = $database->select("app_servers_history", "*", [ "serverid" => $server
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
