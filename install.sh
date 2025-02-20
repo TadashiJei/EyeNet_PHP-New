@@ -80,6 +80,69 @@ if [ -n "$(command -v apt-get)" ]; then
 	fi
 fi
 
+# Ubuntu-specific web server setup
+if [ -n "$(command -v apt-get)" ]; then
+    echo "Setting up web server and PHP..."
+    apt-get install -y apache2 php php-mysql php-curl php-xml php-mbstring >> $LOG 2>&1
+    
+    # Enable required Apache modules
+    a2enmod rewrite
+    a2enmod ssl
+    
+    # Restart Apache
+    systemctl restart apache2
+    systemctl enable apache2
+    
+    # Install MySQL if not present
+    if ! type "mysql" >> $LOG 2>&1; then
+        echo "Installing MySQL Server..."
+        apt-get install -y mysql-server >> $LOG 2>&1
+        systemctl start mysql
+        systemctl enable mysql
+    fi
+    
+    # Set up virtual host
+    echo "Setting up Virtual Host..."
+    read -p "Enter your domain name (e.g., eyenet.example.com): " DOMAIN_NAME
+    
+    # Create Apache virtual host configuration
+    cat > /etc/apache2/sites-available/eyenet.conf << EOF
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName $DOMAIN_NAME
+    DocumentRoot /var/www/html/eyenet
+    
+    <Directory /var/www/html/eyenet>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    ErrorLog \${APACHE_LOG_DIR}/eyenet-error.log
+    CustomLog \${APACHE_LOG_DIR}/eyenet-access.log combined
+</VirtualHost>
+EOF
+    
+    # Enable the site
+    a2ensite eyenet.conf
+    
+    # Create web directory if it doesn't exist
+    mkdir -p /var/www/html/eyenet
+    
+    # Set proper permissions
+    chown -R www-data:www-data /var/www/html/eyenet
+    chmod -R 755 /var/www/html/eyenet
+    
+    # Restart Apache to apply changes
+    systemctl restart apache2
+    
+    echo "Web server setup completed!"
+    echo "Please ensure to:"
+    echo "1. Point your domain DNS A record to this server's IP address"
+    echo "2. Configure your database in config.php"
+    echo "3. Consider setting up SSL using Let's Encrypt"
+fi
+
 # ArchLinux
 if [ -n "$(command -v pacman)" ]; then
 	pacman -Sy  >> $LOG 2>&1
